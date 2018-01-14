@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import Configuracoes from './componentes/Configuracoes';
 
 
 class Home extends Component{
@@ -12,6 +13,8 @@ class Home extends Component{
                 <h3>Home</h3>
             </div>
             
+            <Configuracoes />
+
         </div>
 
         );
