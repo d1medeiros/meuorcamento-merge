@@ -1,0 +1,1048 @@
+2017-12-18 19:30:42,865 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2017-12-18 19:30:43,065 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2017-12-18 19:30:43,150 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2017-12-18 19:30:43,151 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/jboss-modules.jar:/opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/java/jdk1.8.0_151/jre/lib/endorsed
+	java.ext.dirs = /opt/java/jdk1.8.0_151/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/java/jdk1.8.0_151/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_151-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_151
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.151-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final
+	jboss.host.name = aianwhat
+	jboss.modules.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = aianwhat
+	jboss.qualified.host.name = aianwhat
+	jboss.server.base.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	jboss.server.config.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log
+	jboss.server.name = aianwhat
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties
+	module.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	org.jboss.boot.log.file = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.8.0-53-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 11
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/sunrsasign.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar:/opt/java/jdk1.8.0_151/jre/classes
+	sun.boot.library.path = /opt/java/jdk1.8.0_151/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = BR
+	user.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/bin
+	user.home = /home/aianwhat
+	user.language = en
+	user.language.format = pt
+	user.name = aianwhat
+	user.timezone = America/Sao_Paulo
+2017-12-18 19:30:43,151 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 11 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2017-12-18 19:30:44,102 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2017-12-18 19:30:44,119 INFO  [org.wildfly.security] (ServerService Thread Pool -- 15) ELY00001: WildFly Elytron version 1.1.6.Final
+2017-12-18 19:30:44,117 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 29) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2017-12-18 19:30:44,133 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found meuorcamento.war in deployment directory. To trigger deployment create a file called meuorcamento.war.dodeploy
+2017-12-18 19:30:44,172 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-12-18 19:30:44,186 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.5.4.Final
+2017-12-18 19:30:44,192 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.5.4.Final
+2017-12-18 19:30:44,226 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.5.Final
+2017-12-18 19:30:44,235 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy version 3.0.24.Final
+2017-12-18 19:30:44,235 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-12-18 19:30:44,238 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2017-12-18 19:30:44,243 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2017-12-18 19:30:44,248 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+2017-12-18 19:30:44,249 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+2017-12-18 19:30:44,260 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2017-12-18 19:30:44,266 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-12-18 19:30:44,270 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2017-12-18 19:30:44,286 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2017-12-18 19:30:44,289 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-12-18 19:30:44,294 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.2.Final
+2017-12-18 19:30:44,307 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final)
+2017-12-18 19:30:44,316 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-12-18 19:30:44,323 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2017-12-18 19:30:44,325 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = mysql
+2017-12-18 19:30:44,383 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2017-12-18 19:30:44,384 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2017-12-18 19:30:44,388 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 1.4.18.Final starting
+2017-12-18 19:30:44,526 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path '/home/aianwhat/Documents/server/wildfly-11.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-12-18 19:30:44,530 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2017-12-18 19:30:44,532 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2017-12-18 19:30:44,580 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2017-12-18 19:30:44,585 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: EJB subsystem suspension complete
+2017-12-18 19:30:44,667 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-12-18 19:30:44,667 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/DiegoDS]
+2017-12-18 19:30:44,687 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2017-12-18 19:30:44,801 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-12-18 19:30:44,806 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/deployments
+2017-12-18 19:30:44,817 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "meuorcamento.war" (runtime-name: "meuorcamento.war")
+2017-12-18 19:30:44,915 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2017-12-18 19:30:44,961 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.1.9.Final (Apache CXF 3.1.12) 
+2017-12-18 19:30:45,283 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for meuorcamento-persistence-unit
+2017-12-18 19:30:45,324 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 62) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2017-12-18 19:30:45,338 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 62) HHH000204: Processing PersistenceUnitInfo [
+	name: meuorcamento-persistence-unit
+	...]
+2017-12-18 19:30:45,367 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment meuorcamento.war
+2017-12-18 19:30:45,382 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 62) HHH000412: Hibernate Core {5.1.10.Final}
+2017-12-18 19:30:45,383 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000206: hibernate.properties not found
+2017-12-18 19:30:45,384 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000021: Bytecode provider name : javassist
+2017-12-18 19:30:45,422 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 62) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-18 19:30:45,429 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 5.3.5.Final
+2017-12-18 19:30:45,483 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'ContaDao' in deployment unit 'deployment "meuorcamento.war"' are as follows:
+
+	java:global/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:app/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:module/ContaDao!org.meuorcamento.dao.ContaDao
+	java:global/meuorcamento/ContaDao
+	java:app/meuorcamento/ContaDao
+	java:module/ContaDao
+
+2017-12-18 19:30:45,640 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.8.Final
+2017-12-18 19:30:45,688 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 2.4.3 (Final)
+2017-12-18 19:30:45,843 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2017-12-18 19:30:45,868 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-12-18 19:30:45,974 ERROR [stderr] (ServerService Thread Pool -- 63) Mon Dec 18 19:30:45 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:30:46,066 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:30:46 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:30:46,069 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:30:46 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:30:46,072 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:30:46 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:30:46,076 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:30:46 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:30:46,076 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 63) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017-12-18 19:30:46,079 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:30:46 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:30:46,083 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:30:46 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:30:46,086 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:30:46 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:30:46,089 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:30:46 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:30:46,092 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:30:46 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:30:46,102 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 63) Envers integration enabled? : true
+2017-12-18 19:30:46,346 INFO  [stdout] (ServerService Thread Pool -- 63) Hibernate: 
+2017-12-18 19:30:46,347 INFO  [stdout] (ServerService Thread Pool -- 63)     
+2017-12-18 19:30:46,347 INFO  [stdout] (ServerService Thread Pool -- 63)     drop table if exists Conta
+2017-12-18 19:30:46,357 INFO  [stdout] (ServerService Thread Pool -- 63) Hibernate: 
+2017-12-18 19:30:46,357 INFO  [stdout] (ServerService Thread Pool -- 63)     
+2017-12-18 19:30:46,357 INFO  [stdout] (ServerService Thread Pool -- 63)     create table Conta (
+2017-12-18 19:30:46,357 INFO  [stdout] (ServerService Thread Pool -- 63)         id integer not null auto_increment,
+2017-12-18 19:30:46,357 INFO  [stdout] (ServerService Thread Pool -- 63)         dataPagamento date,
+2017-12-18 19:30:46,357 INFO  [stdout] (ServerService Thread Pool -- 63)         estado bit not null,
+2017-12-18 19:30:46,357 INFO  [stdout] (ServerService Thread Pool -- 63)         nome varchar(255),
+2017-12-18 19:30:46,357 INFO  [stdout] (ServerService Thread Pool -- 63)         repetir bit not null,
+2017-12-18 19:30:46,357 INFO  [stdout] (ServerService Thread Pool -- 63)         valor double precision,
+2017-12-18 19:30:46,357 INFO  [stdout] (ServerService Thread Pool -- 63)         primary key (id)
+2017-12-18 19:30:46,357 INFO  [stdout] (ServerService Thread Pool -- 63)     ) ENGINE=InnoDB
+2017-12-18 19:30:46,368 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 63) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2ab8b1c0'
+2017-12-18 19:30:46,781 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 63) Initializing Mojarra 2.2.13.SP4  for context '/meuorcamento'
+2017-12-18 19:30:47,215 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0021: Registered web context: '/meuorcamento' for server 'default-server'
+2017-12-18 19:30:47,222 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "meuorcamento.war" (runtime-name : "meuorcamento.war")
+2017-12-18 19:30:47,253 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2017-12-18 19:30:47,255 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-12-18 19:30:47,256 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-12-18 19:30:47,256 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) started in 4623ms - Started 451 of 676 services (355 services are lazy, passive or on-demand)
+2017-12-18 19:31:32,848 SEVERE [javax.enterprise.resource.webcontainer.jsf.application] (default task-2) JSF1006: Cannot instantiate converter of type dateConverter
+2017-12-18 19:31:32,856 ERROR [io.undertow.request] (default task-2) UT005023: Exception handling request to /meuorcamento/conta.xhtml: javax.servlet.ServletException: Expression Error: Named Object: dateConverter not found.
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:326)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:812)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.faces.FacesException: Expression Error: Named Object: dateConverter not found.
+	at com.sun.faces.application.ApplicationImpl.createConverter(ApplicationImpl.java:1339)
+	at javax.faces.application.ApplicationWrapper.createConverter(ApplicationWrapper.java:393)
+	at com.sun.faces.facelets.tag.jsf.ValueHolderRule$LiteralConverterMetadata.applyMetadata(ValueHolderRule.java:85)
+	at com.sun.faces.facelets.tag.MetadataImpl.applyMetadata(MetadataImpl.java:81)
+	at javax.faces.view.facelets.MetaTagHandler.setAttributes(MetaTagHandler.java:129)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.setAttributes(DelegatingMetaTagHandler.java:102)
+	at com.sun.faces.facelets.tag.jsf.ComponentTagHandlerDelegateImpl.doNewComponentActions(ComponentTagHandlerDelegateImpl.java:491)
+	at com.sun.faces.facelets.tag.jsf.ComponentTagHandlerDelegateImpl.apply(ComponentTagHandlerDelegateImpl.java:178)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.apply(DelegatingMetaTagHandler.java:120)
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.applyNextHandler(DelegatingMetaTagHandler.java:137)
+	at com.sun.faces.facelets.tag.jsf.ComponentTagHandlerDelegateImpl.apply(ComponentTagHandlerDelegateImpl.java:202)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.apply(DelegatingMetaTagHandler.java:120)
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95)
+	at com.sun.faces.facelets.tag.ui.DefineHandler.applyDefinition(DefineHandler.java:106)
+	at com.sun.faces.facelets.tag.ui.CompositionHandler.apply(CompositionHandler.java:206)
+	at com.sun.faces.facelets.impl.DefaultFaceletContext$TemplateManager.apply(DefaultFaceletContext.java:395)
+	at com.sun.faces.facelets.impl.DefaultFaceletContext.includeDefinition(DefaultFaceletContext.java:366)
+	at com.sun.faces.facelets.tag.ui.InsertHandler.apply(InsertHandler.java:111)
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.applyNextHandler(DelegatingMetaTagHandler.java:137)
+	at com.sun.faces.facelets.tag.jsf.ComponentTagHandlerDelegateImpl.apply(ComponentTagHandlerDelegateImpl.java:202)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.apply(DelegatingMetaTagHandler.java:120)
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95)
+	at com.sun.faces.facelets.compiler.NamespaceHandler.apply(NamespaceHandler.java:93)
+	at com.sun.faces.facelets.compiler.EncodingHandler.apply(EncodingHandler.java:87)
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:312)
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:371)
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:350)
+	at com.sun.faces.facelets.impl.DefaultFaceletContext.includeFacelet(DefaultFaceletContext.java:199)
+	at com.sun.faces.facelets.tag.ui.CompositionHandler.apply(CompositionHandler.java:174)
+	at com.sun.faces.facelets.compiler.NamespaceHandler.apply(NamespaceHandler.java:93)
+	at com.sun.faces.facelets.compiler.EncodingHandler.apply(EncodingHandler.java:87)
+	at com.sun.faces.facelets.impl.DefaultFacelet.apply(DefaultFacelet.java:161)
+	at com.sun.faces.application.view.FaceletViewHandlingStrategy.buildView(FaceletViewHandlingStrategy.java:1006)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:659)
+	... 39 more
+
+2017-12-18 19:31:36,178 SEVERE [javax.enterprise.resource.webcontainer.jsf.application] (default task-3) JSF1006: Cannot instantiate converter of type dateConverter
+2017-12-18 19:31:36,178 ERROR [io.undertow.request] (default task-3) UT005023: Exception handling request to /meuorcamento/conta.xhtml: javax.servlet.ServletException: Expression Error: Named Object: dateConverter not found.
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:326)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:812)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.faces.FacesException: Expression Error: Named Object: dateConverter not found.
+	at com.sun.faces.application.ApplicationImpl.createConverter(ApplicationImpl.java:1339)
+	at javax.faces.application.ApplicationWrapper.createConverter(ApplicationWrapper.java:393)
+	at com.sun.faces.facelets.tag.jsf.ValueHolderRule$LiteralConverterMetadata.applyMetadata(ValueHolderRule.java:85)
+	at com.sun.faces.facelets.tag.MetadataImpl.applyMetadata(MetadataImpl.java:81)
+	at javax.faces.view.facelets.MetaTagHandler.setAttributes(MetaTagHandler.java:129)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.setAttributes(DelegatingMetaTagHandler.java:102)
+	at com.sun.faces.facelets.tag.jsf.ComponentTagHandlerDelegateImpl.doNewComponentActions(ComponentTagHandlerDelegateImpl.java:491)
+	at com.sun.faces.facelets.tag.jsf.ComponentTagHandlerDelegateImpl.apply(ComponentTagHandlerDelegateImpl.java:178)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.apply(DelegatingMetaTagHandler.java:120)
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.applyNextHandler(DelegatingMetaTagHandler.java:137)
+	at com.sun.faces.facelets.tag.jsf.ComponentTagHandlerDelegateImpl.apply(ComponentTagHandlerDelegateImpl.java:202)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.apply(DelegatingMetaTagHandler.java:120)
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95)
+	at com.sun.faces.facelets.tag.ui.DefineHandler.applyDefinition(DefineHandler.java:106)
+	at com.sun.faces.facelets.tag.ui.CompositionHandler.apply(CompositionHandler.java:206)
+	at com.sun.faces.facelets.impl.DefaultFaceletContext$TemplateManager.apply(DefaultFaceletContext.java:395)
+	at com.sun.faces.facelets.impl.DefaultFaceletContext.includeDefinition(DefaultFaceletContext.java:366)
+	at com.sun.faces.facelets.tag.ui.InsertHandler.apply(InsertHandler.java:111)
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.applyNextHandler(DelegatingMetaTagHandler.java:137)
+	at com.sun.faces.facelets.tag.jsf.ComponentTagHandlerDelegateImpl.apply(ComponentTagHandlerDelegateImpl.java:202)
+	at javax.faces.view.facelets.DelegatingMetaTagHandler.apply(DelegatingMetaTagHandler.java:120)
+	at javax.faces.view.facelets.CompositeFaceletHandler.apply(CompositeFaceletHandler.java:95)
+	at com.sun.faces.facelets.compiler.NamespaceHandler.apply(NamespaceHandler.java:93)
+	at com.sun.faces.facelets.compiler.EncodingHandler.apply(EncodingHandler.java:87)
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:312)
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:371)
+	at com.sun.faces.facelets.impl.DefaultFacelet.include(DefaultFacelet.java:350)
+	at com.sun.faces.facelets.impl.DefaultFaceletContext.includeFacelet(DefaultFaceletContext.java:199)
+	at com.sun.faces.facelets.tag.ui.CompositionHandler.apply(CompositionHandler.java:174)
+	at com.sun.faces.facelets.compiler.NamespaceHandler.apply(NamespaceHandler.java:93)
+	at com.sun.faces.facelets.compiler.EncodingHandler.apply(EncodingHandler.java:87)
+	at com.sun.faces.facelets.impl.DefaultFacelet.apply(DefaultFacelet.java:161)
+	at com.sun.faces.application.view.FaceletViewHandlingStrategy.buildView(FaceletViewHandlingStrategy.java:1006)
+	at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:99)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:219)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:659)
+	... 39 more
+
+2017-12-18 19:32:12,268 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0236: Suspending server with no timeout.
+2017-12-18 19:32:12,270 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+2017-12-18 19:32:12,272 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2017-12-18 19:32:12,301 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 67) WFLYUT0022: Unregistered web context: '/meuorcamento' from server 'default-server'
+2017-12-18 19:32:12,312 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2017-12-18 19:32:12,318 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2017-12-18 19:32:12,320 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2017-12-18 19:32:12,319 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 68) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2017-12-18 19:32:12,320 INFO  [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] (ServerService Thread Pool -- 68) HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2017-12-18 19:32:12,320 INFO  [stdout] (ServerService Thread Pool -- 68) Hibernate: 
+2017-12-18 19:32:12,321 INFO  [stdout] (ServerService Thread Pool -- 68)     
+2017-12-18 19:32:12,321 INFO  [stdout] (ServerService Thread Pool -- 68)     drop table if exists Conta
+2017-12-18 19:32:12,321 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 67) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-12-18 19:32:12,327 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 68) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2017-12-18 19:32:12,328 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/DiegoDS]
+2017-12-18 19:32:12,330 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = mysql
+2017-12-18 19:32:12,339 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment meuorcamento.war (runtime-name: meuorcamento.war) in 58ms
+2017-12-18 19:32:12,341 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2017-12-18 19:32:12,341 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2017-12-18 19:32:12,341 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2017-12-18 19:32:12,342 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2017-12-18 19:32:12,342 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 1.4.18.Final stopping
+2017-12-18 19:32:12,345 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) stopped in 60ms
+2017-12-18 19:32:12,641 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2017-12-18 19:32:12,832 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2017-12-18 19:32:12,915 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2017-12-18 19:32:12,916 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/jboss-modules.jar:/opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/java/jdk1.8.0_151/jre/lib/endorsed
+	java.ext.dirs = /opt/java/jdk1.8.0_151/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/java/jdk1.8.0_151/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_151-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_151
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.151-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final
+	jboss.host.name = aianwhat
+	jboss.modules.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = aianwhat
+	jboss.qualified.host.name = aianwhat
+	jboss.server.base.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	jboss.server.config.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log
+	jboss.server.name = aianwhat
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties
+	module.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	org.jboss.boot.log.file = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.8.0-53-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 11
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/sunrsasign.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar:/opt/java/jdk1.8.0_151/jre/classes
+	sun.boot.library.path = /opt/java/jdk1.8.0_151/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = BR
+	user.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/bin
+	user.home = /home/aianwhat
+	user.language = en
+	user.language.format = pt
+	user.name = aianwhat
+	user.timezone = America/Sao_Paulo
+2017-12-18 19:32:12,917 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 11 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2017-12-18 19:32:13,733 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2017-12-18 19:32:13,744 INFO  [org.wildfly.security] (ServerService Thread Pool -- 4) ELY00001: WildFly Elytron version 1.1.6.Final
+2017-12-18 19:32:13,753 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 29) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2017-12-18 19:32:13,764 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found meuorcamento.war in deployment directory. To trigger deployment create a file called meuorcamento.war.dodeploy
+2017-12-18 19:32:13,803 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-12-18 19:32:13,817 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.5.4.Final
+2017-12-18 19:32:13,828 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.5.4.Final
+2017-12-18 19:32:13,836 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy version 3.0.24.Final
+2017-12-18 19:32:13,839 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-12-18 19:32:13,842 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-12-18 19:32:13,848 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2017-12-18 19:32:13,853 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2017-12-18 19:32:13,866 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2017-12-18 19:32:13,868 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final)
+2017-12-18 19:32:13,871 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+2017-12-18 19:32:13,878 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2017-12-18 19:32:13,880 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-12-18 19:32:13,881 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+2017-12-18 19:32:13,917 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 1.4.18.Final starting
+2017-12-18 19:32:13,918 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.2.Final
+2017-12-18 19:32:13,932 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2017-12-18 19:32:13,934 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2017-12-18 19:32:13,935 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-12-18 19:32:13,936 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = mysql
+2017-12-18 19:32:13,943 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.5.Final
+2017-12-18 19:32:14,037 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2017-12-18 19:32:14,037 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2017-12-18 19:32:14,116 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path '/home/aianwhat/Documents/server/wildfly-11.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-12-18 19:32:14,123 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2017-12-18 19:32:14,124 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2017-12-18 19:32:14,177 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2017-12-18 19:32:14,230 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2017-12-18 19:32:14,274 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2017-12-18 19:32:14,286 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/deployments
+2017-12-18 19:32:14,287 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-12-18 19:32:14,446 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "meuorcamento.war" (runtime-name: "meuorcamento.war")
+2017-12-18 19:32:14,460 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-12-18 19:32:14,460 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/DiegoDS]
+2017-12-18 19:32:14,527 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2017-12-18 19:32:14,574 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.1.9.Final (Apache CXF 3.1.12) 
+2017-12-18 19:32:14,845 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for meuorcamento-persistence-unit
+2017-12-18 19:32:14,903 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 62) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2017-12-18 19:32:14,916 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 62) HHH000204: Processing PersistenceUnitInfo [
+	name: meuorcamento-persistence-unit
+	...]
+2017-12-18 19:32:14,936 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment meuorcamento.war
+2017-12-18 19:32:14,961 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 62) HHH000412: Hibernate Core {5.1.10.Final}
+2017-12-18 19:32:14,962 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000206: hibernate.properties not found
+2017-12-18 19:32:14,963 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000021: Bytecode provider name : javassist
+2017-12-18 19:32:14,981 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 5.3.5.Final
+2017-12-18 19:32:14,989 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 62) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-18 19:32:15,044 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'ContaDao' in deployment unit 'deployment "meuorcamento.war"' are as follows:
+
+	java:global/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:app/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:module/ContaDao!org.meuorcamento.dao.ContaDao
+	java:global/meuorcamento/ContaDao
+	java:app/meuorcamento/ContaDao
+	java:module/ContaDao
+
+2017-12-18 19:32:15,181 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.8.Final
+2017-12-18 19:32:15,228 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 2.4.3 (Final)
+2017-12-18 19:32:15,395 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2017-12-18 19:32:15,424 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-12-18 19:32:15,522 ERROR [stderr] (ServerService Thread Pool -- 63) Mon Dec 18 19:32:15 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:32:15,612 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:32:15 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:32:15,615 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:32:15 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:32:15,617 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:32:15 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:32:15,621 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:32:15 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:32:15,622 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 63) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2017-12-18 19:32:15,624 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:32:15 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:32:15,628 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:32:15 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:32:15,630 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:32:15 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:32:15,633 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:32:15 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:32:15,635 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 19:32:15 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 19:32:15,649 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 63) Envers integration enabled? : true
+2017-12-18 19:32:15,890 INFO  [stdout] (ServerService Thread Pool -- 63) Hibernate: 
+2017-12-18 19:32:15,890 INFO  [stdout] (ServerService Thread Pool -- 63)     
+2017-12-18 19:32:15,890 INFO  [stdout] (ServerService Thread Pool -- 63)     drop table if exists Conta
+2017-12-18 19:32:15,896 INFO  [stdout] (ServerService Thread Pool -- 63) Hibernate: 
+2017-12-18 19:32:15,896 INFO  [stdout] (ServerService Thread Pool -- 63)     
+2017-12-18 19:32:15,896 INFO  [stdout] (ServerService Thread Pool -- 63)     create table Conta (
+2017-12-18 19:32:15,896 INFO  [stdout] (ServerService Thread Pool -- 63)         id integer not null auto_increment,
+2017-12-18 19:32:15,896 INFO  [stdout] (ServerService Thread Pool -- 63)         dataPagamento date,
+2017-12-18 19:32:15,896 INFO  [stdout] (ServerService Thread Pool -- 63)         estado bit not null,
+2017-12-18 19:32:15,896 INFO  [stdout] (ServerService Thread Pool -- 63)         nome varchar(255),
+2017-12-18 19:32:15,896 INFO  [stdout] (ServerService Thread Pool -- 63)         repetir bit not null,
+2017-12-18 19:32:15,896 INFO  [stdout] (ServerService Thread Pool -- 63)         valor double precision,
+2017-12-18 19:32:15,896 INFO  [stdout] (ServerService Thread Pool -- 63)         primary key (id)
+2017-12-18 19:32:15,896 INFO  [stdout] (ServerService Thread Pool -- 63)     ) ENGINE=InnoDB
+2017-12-18 19:32:15,907 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 63) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6fc70dc7'
+2017-12-18 19:32:16,272 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 63) Initializing Mojarra 2.2.13.SP4  for context '/meuorcamento'
+2017-12-18 19:32:16,619 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0021: Registered web context: '/meuorcamento' for server 'default-server'
+2017-12-18 19:32:16,627 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "meuorcamento.war" (runtime-name : "meuorcamento.war")
+2017-12-18 19:32:16,664 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2017-12-18 19:32:16,666 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-12-18 19:32:16,666 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-12-18 19:32:16,667 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) started in 4250ms - Started 451 of 676 services (355 services are lazy, passive or on-demand)
+2017-12-18 19:35:11,607 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-19) HHH000397: Using ASTQueryTranslatorFactory
+2017-12-18 19:35:11,662 INFO  [stdout] (default task-19) Hibernate: 
+2017-12-18 19:35:11,662 INFO  [stdout] (default task-19)     select
+2017-12-18 19:35:11,662 INFO  [stdout] (default task-19)         conta0_.id as id1_0_,
+2017-12-18 19:35:11,663 INFO  [stdout] (default task-19)         conta0_.dataPagamento as dataPaga2_0_,
+2017-12-18 19:35:11,663 INFO  [stdout] (default task-19)         conta0_.estado as estado3_0_,
+2017-12-18 19:35:11,663 INFO  [stdout] (default task-19)         conta0_.nome as nome4_0_,
+2017-12-18 19:35:11,663 INFO  [stdout] (default task-19)         conta0_.repetir as repetir5_0_,
+2017-12-18 19:35:11,663 INFO  [stdout] (default task-19)         conta0_.valor as valor6_0_ 
+2017-12-18 19:35:11,663 INFO  [stdout] (default task-19)     from
+2017-12-18 19:35:11,663 INFO  [stdout] (default task-19)         Conta conta0_
+2017-12-18 19:35:11,696 INFO  [stdout] (default task-19) Hibernate: 
+2017-12-18 19:35:11,696 INFO  [stdout] (default task-19)     select
+2017-12-18 19:35:11,697 INFO  [stdout] (default task-19)         conta0_.id as id1_0_,
+2017-12-18 19:35:11,697 INFO  [stdout] (default task-19)         conta0_.dataPagamento as dataPaga2_0_,
+2017-12-18 19:35:11,697 INFO  [stdout] (default task-19)         conta0_.estado as estado3_0_,
+2017-12-18 19:35:11,697 INFO  [stdout] (default task-19)         conta0_.nome as nome4_0_,
+2017-12-18 19:35:11,697 INFO  [stdout] (default task-19)         conta0_.repetir as repetir5_0_,
+2017-12-18 19:35:11,697 INFO  [stdout] (default task-19)         conta0_.valor as valor6_0_ 
+2017-12-18 19:35:11,697 INFO  [stdout] (default task-19)     from
+2017-12-18 19:35:11,697 INFO  [stdout] (default task-19)         Conta conta0_
+2017-12-18 19:35:11,700 INFO  [stdout] (default task-19) Hibernate: 
+2017-12-18 19:35:11,700 INFO  [stdout] (default task-19)     select
+2017-12-18 19:35:11,701 INFO  [stdout] (default task-19)         conta0_.id as id1_0_,
+2017-12-18 19:35:11,701 INFO  [stdout] (default task-19)         conta0_.dataPagamento as dataPaga2_0_,
+2017-12-18 19:35:11,701 INFO  [stdout] (default task-19)         conta0_.estado as estado3_0_,
+2017-12-18 19:35:11,701 INFO  [stdout] (default task-19)         conta0_.nome as nome4_0_,
+2017-12-18 19:35:11,701 INFO  [stdout] (default task-19)         conta0_.repetir as repetir5_0_,
+2017-12-18 19:35:11,701 INFO  [stdout] (default task-19)         conta0_.valor as valor6_0_ 
+2017-12-18 19:35:11,701 INFO  [stdout] (default task-19)     from
+2017-12-18 19:35:11,701 INFO  [stdout] (default task-19)         Conta conta0_
+2017-12-18 19:35:31,150 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,150 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,151 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,151 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,151 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,151 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,151 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,155 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,155 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,155 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,155 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,155 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,155 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,155 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,157 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,157 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,157 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,157 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,157 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,157 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,157 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,158 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,158 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,158 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,158 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,158 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,158 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,159 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,160 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,160 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,160 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,160 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,160 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,160 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,160 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,161 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,161 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,161 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,161 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,161 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,161 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,161 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,163 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,163 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,163 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,163 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,163 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,163 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,163 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,165 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,165 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,165 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,165 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,165 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,165 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,165 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,168 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,168 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,168 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,168 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,168 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,168 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,168 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,170 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,170 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,170 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,170 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,170 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,170 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,170 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,172 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,172 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,172 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,172 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,173 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,173 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,173 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,174 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,174 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,174 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,174 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,174 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,174 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,174 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,176 INFO  [stdout] (default task-23) Hibernate: 
+2017-12-18 19:35:31,176 INFO  [stdout] (default task-23)     insert 
+2017-12-18 19:35:31,176 INFO  [stdout] (default task-23)     into
+2017-12-18 19:35:31,176 INFO  [stdout] (default task-23)         Conta
+2017-12-18 19:35:31,176 INFO  [stdout] (default task-23)         (dataPagamento, estado, nome, repetir, valor) 
+2017-12-18 19:35:31,176 INFO  [stdout] (default task-23)     values
+2017-12-18 19:35:31,176 INFO  [stdout] (default task-23)         (?, ?, ?, ?, ?)
+2017-12-18 19:35:31,177 INFO  [stdout] (default task-23) vivo - 211.1 - 2017-12-18 - true
+2017-12-18 19:35:34,192 INFO  [stdout] (default task-26) Hibernate: 
+2017-12-18 19:35:34,192 INFO  [stdout] (default task-26)     select
+2017-12-18 19:35:34,192 INFO  [stdout] (default task-26)         conta0_.id as id1_0_,
+2017-12-18 19:35:34,192 INFO  [stdout] (default task-26)         conta0_.dataPagamento as dataPaga2_0_,
+2017-12-18 19:35:34,192 INFO  [stdout] (default task-26)         conta0_.estado as estado3_0_,
+2017-12-18 19:35:34,192 INFO  [stdout] (default task-26)         conta0_.nome as nome4_0_,
+2017-12-18 19:35:34,192 INFO  [stdout] (default task-26)         conta0_.repetir as repetir5_0_,
+2017-12-18 19:35:34,192 INFO  [stdout] (default task-26)         conta0_.valor as valor6_0_ 
+2017-12-18 19:35:34,192 INFO  [stdout] (default task-26)     from
+2017-12-18 19:35:34,192 INFO  [stdout] (default task-26)         Conta conta0_
+2017-12-18 19:35:34,202 INFO  [stdout] (default task-26) Hibernate: 
+2017-12-18 19:35:34,203 INFO  [stdout] (default task-26)     select
+2017-12-18 19:35:34,203 INFO  [stdout] (default task-26)         conta0_.id as id1_0_,
+2017-12-18 19:35:34,203 INFO  [stdout] (default task-26)         conta0_.dataPagamento as dataPaga2_0_,
+2017-12-18 19:35:34,203 INFO  [stdout] (default task-26)         conta0_.estado as estado3_0_,
+2017-12-18 19:35:34,203 INFO  [stdout] (default task-26)         conta0_.nome as nome4_0_,
+2017-12-18 19:35:34,203 INFO  [stdout] (default task-26)         conta0_.repetir as repetir5_0_,
+2017-12-18 19:35:34,203 INFO  [stdout] (default task-26)         conta0_.valor as valor6_0_ 
+2017-12-18 19:35:34,203 INFO  [stdout] (default task-26)     from
+2017-12-18 19:35:34,203 INFO  [stdout] (default task-26)         Conta conta0_
+2017-12-18 19:35:34,211 INFO  [stdout] (default task-26) Hibernate: 
+2017-12-18 19:35:34,211 INFO  [stdout] (default task-26)     select
+2017-12-18 19:35:34,211 INFO  [stdout] (default task-26)         conta0_.id as id1_0_,
+2017-12-18 19:35:34,211 INFO  [stdout] (default task-26)         conta0_.dataPagamento as dataPaga2_0_,
+2017-12-18 19:35:34,211 INFO  [stdout] (default task-26)         conta0_.estado as estado3_0_,
+2017-12-18 19:35:34,211 INFO  [stdout] (default task-26)         conta0_.nome as nome4_0_,
+2017-12-18 19:35:34,212 INFO  [stdout] (default task-26)         conta0_.repetir as repetir5_0_,
+2017-12-18 19:35:34,212 INFO  [stdout] (default task-26)         conta0_.valor as valor6_0_ 
+2017-12-18 19:35:34,212 INFO  [stdout] (default task-26)     from
+2017-12-18 19:35:34,212 INFO  [stdout] (default task-26)         Conta conta0_
+2017-12-18 20:17:14,458 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 20:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 20:17:14,465 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 20:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 20:17:14,470 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 20:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 20:17:14,474 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 20:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 20:17:14,477 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 20:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 20:17:14,481 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 20:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 20:17:14,483 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 20:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 20:17:14,485 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 20:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 20:17:14,488 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 20:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 20:17:14,491 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 20:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 20:33:02,527 ERROR [io.undertow.request] (default task-30) UT005023: Exception handling request to /meuorcamento/listar.xhtml: javax.servlet.ServletException: Error Parsing /listar.xhtml: Error Traced[line: 48] The markup in the document following the root element must be well-formed.
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:326)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:812)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.faces.view.facelets.FaceletException: Error Parsing /listar.xhtml: Error Traced[line: 48] The markup in the document following the root element must be well-formed.
+	at com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:466)
+	at com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:449)
+	at com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:130)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:503)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.access$200(DefaultFaceletFactory.java:106)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:205)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:203)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:97)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:92)
+	at com.sun.faces.util.ExpiringConcurrentCache$1.call(ExpiringConcurrentCache.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:114)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:146)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:63)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:316)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:246)
+	at com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:138)
+	at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:243)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:123)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:658)
+	... 39 more
+
+2017-12-18 20:34:52,371 ERROR [io.undertow.request] (default task-34) UT005023: Exception handling request to /meuorcamento/listar.xhtml: javax.servlet.ServletException: Error Parsing /listar.xhtml: Error Traced[line: 46] The markup in the document following the root element must be well-formed.
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:326)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:812)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.faces.view.facelets.FaceletException: Error Parsing /listar.xhtml: Error Traced[line: 46] The markup in the document following the root element must be well-formed.
+	at com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:466)
+	at com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:449)
+	at com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:130)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:503)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.access$200(DefaultFaceletFactory.java:106)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:205)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:203)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:97)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:92)
+	at com.sun.faces.util.ExpiringConcurrentCache$1.call(ExpiringConcurrentCache.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:114)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:146)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:63)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:316)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:246)
+	at com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:138)
+	at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:243)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:123)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:658)
+	... 39 more
+
+2017-12-18 20:35:23,130 ERROR [io.undertow.request] (default task-38) UT005023: Exception handling request to /meuorcamento/listar.xhtml: javax.servlet.ServletException: Error Parsing /listar.xhtml: Error Traced[line: 46] The markup in the document following the root element must be well-formed.
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:326)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:812)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.faces.view.facelets.FaceletException: Error Parsing /listar.xhtml: Error Traced[line: 46] The markup in the document following the root element must be well-formed.
+	at com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:466)
+	at com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:449)
+	at com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:130)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:503)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.access$200(DefaultFaceletFactory.java:106)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:205)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:203)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:97)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:92)
+	at com.sun.faces.util.ExpiringConcurrentCache$1.call(ExpiringConcurrentCache.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:114)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:146)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:63)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:316)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:246)
+	at com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:138)
+	at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:243)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:123)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:658)
+	... 39 more
+
+2017-12-18 20:35:27,434 ERROR [io.undertow.request] (default task-42) UT005023: Exception handling request to /meuorcamento/listar.xhtml: javax.servlet.ServletException: Error Parsing /listar.xhtml: Error Traced[line: 48] The markup in the document following the root element must be well-formed.
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1508)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:326)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:812)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.faces.view.facelets.FaceletException: Error Parsing /listar.xhtml: Error Traced[line: 48] The markup in the document following the root element must be well-formed.
+	at com.sun.faces.facelets.compiler.SAXCompiler.doCompile(SAXCompiler.java:466)
+	at com.sun.faces.facelets.compiler.SAXCompiler.doMetadataCompile(SAXCompiler.java:449)
+	at com.sun.faces.facelets.compiler.Compiler.metadataCompile(Compiler.java:130)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.createMetadataFacelet(DefaultFaceletFactory.java:503)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.access$200(DefaultFaceletFactory.java:106)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:205)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory$2.newInstance(DefaultFaceletFactory.java:203)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:97)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache$2.newInstance(DefaultFaceletCache.java:92)
+	at com.sun.faces.util.ExpiringConcurrentCache$1.call(ExpiringConcurrentCache.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at com.sun.faces.util.ExpiringConcurrentCache.get(ExpiringConcurrentCache.java:114)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:146)
+	at com.sun.faces.facelets.impl.DefaultFaceletCache.getViewMetadataFacelet(DefaultFaceletCache.java:63)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:316)
+	at com.sun.faces.facelets.impl.DefaultFaceletFactory.getMetadataFacelet(DefaultFaceletFactory.java:246)
+	at com.sun.faces.application.view.ViewMetadataImpl.createMetadataView(ViewMetadataImpl.java:138)
+	at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:243)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:101)
+	at com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:123)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:198)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:658)
+	... 39 more
+
+2017-12-18 21:02:14,470 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:02:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:02:14,473 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:02:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:02:14,476 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:02:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:02:14,478 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:02:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:02:14,480 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:02:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:02:14,482 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:02:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:02:14,484 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:02:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:02:14,485 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:02:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:02:14,487 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:02:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:02:14,488 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:02:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:47:14,478 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:47:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:47:14,480 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:47:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:47:14,482 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:47:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:47:14,484 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:47:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:47:14,486 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:47:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:47:14,488 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:47:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:47:14,490 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:47:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:47:14,492 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:47:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:47:14,493 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:47:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 21:47:14,494 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 21:47:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 22:32:14,482 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 22:32:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 22:32:14,484 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 22:32:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 22:32:14,485 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 22:32:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 22:32:14,487 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 22:32:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 22:32:14,488 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 22:32:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 22:32:14,490 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 22:32:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 22:32:14,491 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 22:32:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 22:32:14,492 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 22:32:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 22:32:14,494 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 22:32:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 22:32:14,495 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 22:32:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 23:17:14,495 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 23:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 23:17:14,498 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 23:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 23:17:14,499 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 23:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 23:17:14,501 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 23:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 23:17:14,502 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 23:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 23:17:14,503 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 23:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 23:17:14,505 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 23:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 23:17:14,506 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 23:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 23:17:14,508 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 23:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2017-12-18 23:17:14,509 ERROR [stderr] (JCA PoolFiller) Mon Dec 18 23:17:14 BRST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.

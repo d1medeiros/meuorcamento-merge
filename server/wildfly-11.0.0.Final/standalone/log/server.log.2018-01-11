@@ -1,0 +1,221 @@
+2018-01-11 19:19:57,577 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2018-01-11 19:19:57,892 FATAL [org.jboss.as.server] (main) WFLYSRV0239: Aborting with exit code 1
+2018-01-11 19:20:17,310 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2018-01-11 19:20:17,530 FATAL [org.jboss.as.server] (main) WFLYSRV0239: Aborting with exit code 1
+2018-01-11 19:20:40,327 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2018-01-11 19:20:40,553 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2018-01-11 19:20:40,660 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2018-01-11 19:20:40,661 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/java/jdk1.8.0_151/jre/lib/endorsed
+	java.ext.dirs = /opt/java/jdk1.8.0_151/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/java/jdk1.8.0_151/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_151-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_151
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.151-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final
+	jboss.host.name = aianwhat
+	jboss.modules.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = aianwhat
+	jboss.qualified.host.name = aianwhat
+	jboss.server.base.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	jboss.server.config.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log
+	jboss.server.name = aianwhat
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties
+	module.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	org.jboss.boot.log.file = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.8.0-53-generic
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/sunrsasign.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar:/opt/java/jdk1.8.0_151/jre/classes
+	sun.boot.library.path = /opt/java/jdk1.8.0_151/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/jboss-modules.jar -mp /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final -Djboss.server.base.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone -c standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.country.format = BR
+	user.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/bin
+	user.home = /home/aianwhat
+	user.language = en
+	user.language.format = pt
+	user.name = aianwhat
+	user.timezone = America/Sao_Paulo
+2018-01-11 19:20:40,661 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/server.log -Dlogging.configuration=file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties 
+2018-01-11 19:20:41,548 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-11 19:20:41,563 INFO  [org.wildfly.security] (ServerService Thread Pool -- 27) ELY00001: WildFly Elytron version 1.1.6.Final
+2018-01-11 19:20:41,573 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 9) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-11 19:20:41,585 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found meuorcamento.war in deployment directory. To trigger deployment create a file called meuorcamento.war.dodeploy
+2018-01-11 19:20:41,631 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2018-01-11 19:20:41,645 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.5.4.Final
+2018-01-11 19:20:41,653 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.5.4.Final
+2018-01-11 19:20:41,672 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0001: Activating Infinispan subsystem.
+2018-01-11 19:20:41,672 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2018-01-11 19:20:41,676 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2018-01-11 19:20:41,676 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy version 3.0.24.Final
+2018-01-11 19:20:41,684 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2018-01-11 19:20:41,725 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2018-01-11 19:20:41,731 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+2018-01-11 19:20:41,733 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+2018-01-11 19:20:41,751 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.2.Final
+2018-01-11 19:20:41,759 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final)
+2018-01-11 19:20:41,766 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.4.18.Final starting
+2018-01-11 19:20:41,769 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2018-01-11 19:20:41,771 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2018-01-11 19:20:41,802 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2018-01-11 19:20:41,802 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2018-01-11 19:20:41,809 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2018-01-11 19:20:41,817 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = mysql
+2018-01-11 19:20:41,848 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.5.Final
+2018-01-11 19:20:41,937 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2018-01-11 19:20:41,937 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2018-01-11 19:20:41,958 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path '/home/aianwhat/Documents/server/wildfly-11.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2018-01-11 19:20:41,964 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2018-01-11 19:20:41,966 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2018-01-11 19:20:42,028 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2018-01-11 19:20:42,038 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2018-01-11 19:20:42,172 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2018-01-11 19:20:42,183 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/DiegoDS]
+2018-01-11 19:20:42,184 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2018-01-11 19:20:42,187 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2018-01-11 19:20:42,195 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/deployments
+2018-01-11 19:20:42,201 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "meuorcamento.war" (runtime-name: "meuorcamento.war")
+2018-01-11 19:20:42,306 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2018-01-11 19:20:42,407 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.1.9.Final (Apache CXF 3.1.12) 
+2018-01-11 19:20:43,028 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for meuorcamento-persistence-unit
+2018-01-11 19:20:43,127 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 62) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-11 19:20:43,157 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 62) HHH000204: Processing PersistenceUnitInfo [
+	name: meuorcamento-persistence-unit
+	...]
+2018-01-11 19:20:43,167 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment meuorcamento.war
+2018-01-11 19:20:43,215 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 5.3.5.Final
+2018-01-11 19:20:43,234 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 62) HHH000412: Hibernate Core {5.1.10.Final}
+2018-01-11 19:20:43,235 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000206: hibernate.properties not found
+2018-01-11 19:20:43,237 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000021: Bytecode provider name : javassist
+2018-01-11 19:20:43,272 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 62) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-01-11 19:20:43,287 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'ContaDao' in deployment unit 'deployment "meuorcamento.war"' are as follows:
+
+	java:global/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:app/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:module/ContaDao!org.meuorcamento.dao.ContaDao
+	java:global/meuorcamento/ContaDao
+	java:app/meuorcamento/ContaDao
+	java:module/ContaDao
+
+2018-01-11 19:20:43,457 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.8.Final
+2018-01-11 19:20:43,504 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 2.4.3 (Final)
+2018-01-11 19:20:43,665 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-11 19:20:43,687 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started client-mappings cache from ejb container
+2018-01-11 19:20:43,815 ERROR [stderr] (ServerService Thread Pool -- 63) Thu Jan 11 19:20:43 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-11 19:20:43,910 ERROR [stderr] (JCA PoolFiller) Thu Jan 11 19:20:43 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-11 19:20:43,913 ERROR [stderr] (JCA PoolFiller) Thu Jan 11 19:20:43 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-11 19:20:43,915 ERROR [stderr] (JCA PoolFiller) Thu Jan 11 19:20:43 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-11 19:20:43,918 ERROR [stderr] (JCA PoolFiller) Thu Jan 11 19:20:43 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-11 19:20:43,921 ERROR [stderr] (JCA PoolFiller) Thu Jan 11 19:20:43 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-11 19:20:43,923 ERROR [stderr] (JCA PoolFiller) Thu Jan 11 19:20:43 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-11 19:20:43,926 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 63) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-01-11 19:20:43,926 ERROR [stderr] (JCA PoolFiller) Thu Jan 11 19:20:43 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-11 19:20:43,929 ERROR [stderr] (JCA PoolFiller) Thu Jan 11 19:20:43 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-11 19:20:43,931 ERROR [stderr] (JCA PoolFiller) Thu Jan 11 19:20:43 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-11 19:20:43,955 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 63) Envers integration enabled? : true
+2018-01-11 19:20:44,228 INFO  [stdout] (ServerService Thread Pool -- 63) Hibernate: 
+2018-01-11 19:20:44,228 INFO  [stdout] (ServerService Thread Pool -- 63)     
+2018-01-11 19:20:44,228 INFO  [stdout] (ServerService Thread Pool -- 63)     drop table if exists Conta
+2018-01-11 19:20:44,233 INFO  [stdout] (ServerService Thread Pool -- 63) Hibernate: 
+2018-01-11 19:20:44,233 INFO  [stdout] (ServerService Thread Pool -- 63)     
+2018-01-11 19:20:44,233 INFO  [stdout] (ServerService Thread Pool -- 63)     create table Conta (
+2018-01-11 19:20:44,233 INFO  [stdout] (ServerService Thread Pool -- 63)         id integer not null auto_increment,
+2018-01-11 19:20:44,233 INFO  [stdout] (ServerService Thread Pool -- 63)         chaveGrupoContas varchar(255),
+2018-01-11 19:20:44,233 INFO  [stdout] (ServerService Thread Pool -- 63)         dataPagamento date,
+2018-01-11 19:20:44,234 INFO  [stdout] (ServerService Thread Pool -- 63)         estado bit not null,
+2018-01-11 19:20:44,234 INFO  [stdout] (ServerService Thread Pool -- 63)         nome varchar(255),
+2018-01-11 19:20:44,234 INFO  [stdout] (ServerService Thread Pool -- 63)         repetir bit not null,
+2018-01-11 19:20:44,234 INFO  [stdout] (ServerService Thread Pool -- 63)         tipoConta varchar(255),
+2018-01-11 19:20:44,234 INFO  [stdout] (ServerService Thread Pool -- 63)         valor double precision,
+2018-01-11 19:20:44,234 INFO  [stdout] (ServerService Thread Pool -- 63)         primary key (id)
+2018-01-11 19:20:44,234 INFO  [stdout] (ServerService Thread Pool -- 63)     ) ENGINE=InnoDB
+2018-01-11 19:20:44,247 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 63) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@313581ee'
+2018-01-11 19:20:44,873 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 65) Initializing Mojarra 2.2.13.SP4  for context '/meuorcamento'
+2018-01-11 19:20:45,499 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 65) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-11 19:20:45,502 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 65) RESTEASY002205: Adding provider class org.meuorcamento.util.ObjectMapperContextResolver from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-11 19:20:45,502 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 65) RESTEASY002200: Adding class resource org.meuorcamento.ws.resource.ContaResource from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-11 19:20:45,502 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 65) RESTEASY002205: Adding provider class org.meuorcamento.ws.ResponseFilter from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-11 19:20:45,636 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 65) WFLYUT0021: Registered web context: '/meuorcamento' for server 'default-server'
+2018-01-11 19:20:45,645 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "meuorcamento.war" (runtime-name : "meuorcamento.war")
+2018-01-11 19:20:45,680 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2018-01-11 19:20:45,682 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2018-01-11 19:20:45,683 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2018-01-11 19:20:45,683 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) started in 5573ms - Started 451 of 676 services (355 services are lazy, passive or on-demand)
+2018-01-11 19:21:18,438 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2018-01-11 19:21:18,455 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 65) WFLYUT0022: Unregistered web context: '/meuorcamento' from server 'default-server'
+2018-01-11 19:21:18,465 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2018-01-11 19:21:18,475 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 75) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2018-01-11 19:21:18,485 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2018-01-11 19:21:18,487 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 75) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-11 19:21:18,487 INFO  [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] (ServerService Thread Pool -- 75) HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-01-11 19:21:18,488 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2018-01-11 19:21:18,488 INFO  [stdout] (ServerService Thread Pool -- 75) Hibernate: 
+2018-01-11 19:21:18,488 INFO  [stdout] (ServerService Thread Pool -- 75)     
+2018-01-11 19:21:18,488 INFO  [stdout] (ServerService Thread Pool -- 75)     drop table if exists Conta
+2018-01-11 19:21:18,496 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 75) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-11 19:21:18,498 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/DiegoDS]
+2018-01-11 19:21:18,501 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = mysql
+2018-01-11 19:21:18,504 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTPS listener https suspending
+2018-01-11 19:21:18,504 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2018-01-11 19:21:18,504 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2018-01-11 19:21:18,505 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2018-01-11 19:21:18,505 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 1.4.18.Final stopping
+2018-01-11 19:21:18,510 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment meuorcamento.war (runtime-name: meuorcamento.war) in 69ms
+2018-01-11 19:21:18,513 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) stopped in 67ms

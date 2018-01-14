@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/resources/scaffold/pageTemplate.xhtml">
+
+	<ui:param name="pageTitle" value="Welcome to Forge" />
+
+	<ui:define name="header">
+		Welcome to Meu Orçamento
+	</ui:define>
+
+	<ui:define name="main">
+		<h2 class="success">
+			Your application is running.
+		</h2>
+
+		<div>
+			<h:form id="contasForm">
+				<h:outputLabel value="Nome:" />
+				<h:inputText id="nome" value="#{contaBean.conta.nome}"/>
+				<br/>
+				<h:outputLabel value="Valor:" />
+				<h:inputText id="valor" value="#{contaBean.conta.valor}"/>
+				<br/>
+				<h:outputLabel value="Data Pagamento:" />
+				<h:inputText id="dataPagamento" converter="dateConverter" value="#{contaBean.conta.dataPagamento}" />
+				<br/>
+				<h:outputLabel value="Status:" />
+				<h:selectBooleanCheckbox id="estado" value="#{contaBean.conta.estado}" />
+				<br/>
+				<h:outputLabel value="Repetir:" />
+				<h:selectBooleanCheckbox id="repetir" value="#{contaBean.conta.repetir}" />
+				<br/>
+				<h:commandButton value="Enviar"  action="#{contaBean.salvar}"/>
+			</h:form>
+		</div>		
+
+	</ui:define>
+
+</ui:composition>

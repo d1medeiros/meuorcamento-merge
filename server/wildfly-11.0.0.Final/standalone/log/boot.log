@@ -1,0 +1,103 @@
+2017-12-16 14:01:53,067 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2017-12-16 14:01:53,361 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2017-12-16 14:01:53,491 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2017-12-16 14:01:53,492 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/jboss-modules.jar:/opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/java/jdk1.8.0_151/jre/lib/endorsed
+	java.ext.dirs = /opt/java/jdk1.8.0_151/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/java/jdk1.8.0_151/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_151-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_151
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.151-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final
+	jboss.host.name = aianwhat
+	jboss.modules.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = aianwhat
+	jboss.qualified.host.name = aianwhat
+	jboss.server.base.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	jboss.server.config.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log
+	jboss.server.name = aianwhat
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties
+	module.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	org.jboss.boot.log.file = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.8.0-53-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 11
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/sunrsasign.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar:/opt/java/jdk1.8.0_151/jre/classes
+	sun.boot.library.path = /opt/java/jdk1.8.0_151/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = BR
+	user.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/bin
+	user.home = /home/aianwhat
+	user.language = en
+	user.language.format = pt
+	user.name = aianwhat
+	user.timezone = America/Sao_Paulo
+2017-12-16 14:01:53,492 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 11 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2017-12-16 14:01:54,403 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2017-12-16 14:01:54,413 INFO  [org.wildfly.security] (ServerService Thread Pool -- 23) ELY00001: WildFly Elytron version 1.1.6.Final
+2017-12-16 14:01:54,424 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 21) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2017-12-16 14:01:54,461 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-12-16 14:01:54,472 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.5.4.Final
+2017-12-16 14:01:54,476 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.5.4.Final

@@ -1,0 +1,1718 @@
+2018-01-05 20:14:00,590 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2018-01-05 20:14:00,878 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2018-01-05 20:14:00,993 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2018-01-05 20:14:00,994 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/jboss-modules.jar:/opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/java/jdk1.8.0_151/jre/lib/endorsed
+	java.ext.dirs = /opt/java/jdk1.8.0_151/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/java/jdk1.8.0_151/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_151-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_151
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.151-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final
+	jboss.host.name = aianwhat
+	jboss.modules.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = aianwhat
+	jboss.qualified.host.name = aianwhat
+	jboss.server.base.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	jboss.server.config.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log
+	jboss.server.name = aianwhat
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties
+	module.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	org.jboss.boot.log.file = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.8.0-53-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 11
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/sunrsasign.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar:/opt/java/jdk1.8.0_151/jre/classes
+	sun.boot.library.path = /opt/java/jdk1.8.0_151/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = BR
+	user.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/bin
+	user.home = /home/aianwhat
+	user.language = en
+	user.language.format = pt
+	user.name = aianwhat
+	user.timezone = America/Sao_Paulo
+2018-01-05 20:14:00,994 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 11 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2018-01-05 20:14:01,924 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-05 20:14:01,943 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 22) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-05 20:14:01,936 INFO  [org.wildfly.security] (ServerService Thread Pool -- 17) ELY00001: WildFly Elytron version 1.1.6.Final
+2018-01-05 20:14:01,953 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found meuorcamento.war in deployment directory. To trigger deployment create a file called meuorcamento.war.dodeploy
+2018-01-05 20:14:01,991 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2018-01-05 20:14:02,005 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.5.4.Final
+2018-01-05 20:14:02,011 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.5.4.Final
+2018-01-05 20:14:02,031 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0001: Activating Infinispan subsystem.
+2018-01-05 20:14:02,041 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2018-01-05 20:14:02,038 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy version 3.0.24.Final
+2018-01-05 20:14:02,053 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2018-01-05 20:14:02,059 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+2018-01-05 20:14:02,061 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+2018-01-05 20:14:02,068 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2018-01-05 20:14:02,083 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2018-01-05 20:14:02,090 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.2.Final
+2018-01-05 20:14:02,104 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 1.4.18.Final starting
+2018-01-05 20:14:02,119 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final)
+2018-01-05 20:14:02,122 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2018-01-05 20:14:02,131 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2018-01-05 20:14:02,184 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2018-01-05 20:14:02,191 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2018-01-05 20:14:02,207 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2018-01-05 20:14:02,212 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = mysql
+2018-01-05 20:14:02,250 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.5.Final
+2018-01-05 20:14:02,391 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2018-01-05 20:14:02,391 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2018-01-05 20:14:02,470 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path '/home/aianwhat/Documents/server/wildfly-11.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2018-01-05 20:14:02,480 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2018-01-05 20:14:02,490 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2018-01-05 20:14:02,542 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2018-01-05 20:14:02,577 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2018-01-05 20:14:02,748 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2018-01-05 20:14:02,763 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2018-01-05 20:14:02,767 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/deployments
+2018-01-05 20:14:02,775 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "meuorcamento.war" (runtime-name: "meuorcamento.war")
+2018-01-05 20:14:02,779 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/DiegoDS]
+2018-01-05 20:14:02,780 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2018-01-05 20:14:02,905 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2018-01-05 20:14:02,984 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.1.9.Final (Apache CXF 3.1.12) 
+2018-01-05 20:14:03,698 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for meuorcamento-persistence-unit
+2018-01-05 20:14:03,811 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 62) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-05 20:14:03,831 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 62) HHH000204: Processing PersistenceUnitInfo [
+	name: meuorcamento-persistence-unit
+	...]
+2018-01-05 20:14:03,853 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment meuorcamento.war
+2018-01-05 20:14:03,913 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 5.3.5.Final
+2018-01-05 20:14:03,918 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 62) HHH000412: Hibernate Core {5.1.10.Final}
+2018-01-05 20:14:03,920 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000206: hibernate.properties not found
+2018-01-05 20:14:03,922 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000021: Bytecode provider name : javassist
+2018-01-05 20:14:03,956 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 62) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-01-05 20:14:03,988 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'ContaDao' in deployment unit 'deployment "meuorcamento.war"' are as follows:
+
+	java:global/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:app/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:module/ContaDao!org.meuorcamento.dao.ContaDao
+	java:global/meuorcamento/ContaDao
+	java:app/meuorcamento/ContaDao
+	java:module/ContaDao
+
+2018-01-05 20:14:04,198 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-6) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.8.Final
+2018-01-05 20:14:04,228 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 2.4.3 (Final)
+2018-01-05 20:14:04,407 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-05 20:14:04,477 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started client-mappings cache from ejb container
+2018-01-05 20:14:04,572 ERROR [stderr] (ServerService Thread Pool -- 63) Fri Jan 05 20:14:04 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:04,736 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:04 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:04,743 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:04 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:04,747 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:04 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:04,754 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 63) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-01-05 20:14:04,758 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:04 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:04,766 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:04 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:04,781 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:04 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:04,787 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:04 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:04,796 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:04 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:04,796 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 63) Envers integration enabled? : true
+2018-01-05 20:14:04,799 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:04 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:05,132 INFO  [stdout] (ServerService Thread Pool -- 63) Hibernate: 
+2018-01-05 20:14:05,132 INFO  [stdout] (ServerService Thread Pool -- 63)     
+2018-01-05 20:14:05,132 INFO  [stdout] (ServerService Thread Pool -- 63)     drop table if exists Conta
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63) Hibernate: 
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63)     
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63)     create table Conta (
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63)         id integer not null auto_increment,
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63)         dataPagamento date,
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63)         estado bit not null,
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63)         nome varchar(255),
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63)         repetir bit not null,
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63)         tipoConta varchar(255),
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63)         valor double precision,
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63)         primary key (id)
+2018-01-05 20:14:05,138 INFO  [stdout] (ServerService Thread Pool -- 63)     ) ENGINE=InnoDB
+2018-01-05 20:14:05,152 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 63) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@155f0d5b'
+2018-01-05 20:14:05,744 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 65) Initializing Mojarra 2.2.13.SP4  for context '/meuorcamento'
+2018-01-05 20:14:06,551 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 65) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:06,553 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 65) RESTEASY002205: Adding provider class org.meuorcamento.util.ObjectMapperContextResolver from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:06,554 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 65) RESTEASY002205: Adding provider class org.meuorcamento.ws.ResponseFilter from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:06,554 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 65) RESTEASY002200: Adding class resource org.meuorcamento.ws.resource.ContaResource from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:06,695 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 65) WFLYUT0021: Registered web context: '/meuorcamento' for server 'default-server'
+2018-01-05 20:14:06,704 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "meuorcamento.war" (runtime-name : "meuorcamento.war")
+2018-01-05 20:14:06,736 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2018-01-05 20:14:06,738 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2018-01-05 20:14:06,738 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2018-01-05 20:14:06,738 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) started in 6466ms - Started 451 of 676 services (355 services are lazy, passive or on-demand)
+2018-01-05 20:14:27,397 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0236: Suspending server with no timeout.
+2018-01-05 20:14:27,398 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: EJB subsystem suspension complete
+2018-01-05 20:14:27,399 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2018-01-05 20:14:27,424 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0022: Unregistered web context: '/meuorcamento' from server 'default-server'
+2018-01-05 20:14:27,433 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2018-01-05 20:14:27,443 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2018-01-05 20:14:27,443 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 68) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2018-01-05 20:14:27,444 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 65) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-05 20:14:27,444 INFO  [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] (ServerService Thread Pool -- 65) HHH000477: Starting delayed drop of schema as part of SessionFactory shut-down'
+2018-01-05 20:14:27,446 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2018-01-05 20:14:27,447 INFO  [stdout] (ServerService Thread Pool -- 65) Hibernate: 
+2018-01-05 20:14:27,447 INFO  [stdout] (ServerService Thread Pool -- 65)     
+2018-01-05 20:14:27,447 INFO  [stdout] (ServerService Thread Pool -- 65)     drop table if exists Conta
+2018-01-05 20:14:27,455 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 65) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-05 20:14:27,456 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/DiegoDS]
+2018-01-05 20:14:27,463 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2018-01-05 20:14:27,463 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2018-01-05 20:14:27,467 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2018-01-05 20:14:27,469 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2018-01-05 20:14:27,469 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = mysql
+2018-01-05 20:14:27,470 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 1.4.18.Final stopping
+2018-01-05 20:14:27,472 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment meuorcamento.war (runtime-name: meuorcamento.war) in 67ms
+2018-01-05 20:14:27,475 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) stopped in 69ms
+2018-01-05 20:14:27,846 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2018-01-05 20:14:28,026 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2018-01-05 20:14:28,111 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2018-01-05 20:14:28,112 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/jboss-modules.jar:/opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/java/jdk1.8.0_151/jre/lib/endorsed
+	java.ext.dirs = /opt/java/jdk1.8.0_151/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/java/jdk1.8.0_151/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_151-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_151
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.151-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final
+	jboss.host.name = aianwhat
+	jboss.modules.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = aianwhat
+	jboss.qualified.host.name = aianwhat
+	jboss.server.base.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	jboss.server.config.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log
+	jboss.server.name = aianwhat
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties
+	module.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	org.jboss.boot.log.file = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.8.0-53-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 11
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/sunrsasign.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar:/opt/java/jdk1.8.0_151/jre/classes
+	sun.boot.library.path = /opt/java/jdk1.8.0_151/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = BR
+	user.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/bin
+	user.home = /home/aianwhat
+	user.language = en
+	user.language.format = pt
+	user.name = aianwhat
+	user.timezone = America/Sao_Paulo
+2018-01-05 20:14:28,112 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 11 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2018-01-05 20:14:29,029 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-05 20:14:29,048 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 29) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-05 20:14:29,044 INFO  [org.wildfly.security] (ServerService Thread Pool -- 8) ELY00001: WildFly Elytron version 1.1.6.Final
+2018-01-05 20:14:29,062 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found meuorcamento.war in deployment directory. To trigger deployment create a file called meuorcamento.war.dodeploy
+2018-01-05 20:14:29,091 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2018-01-05 20:14:29,105 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.5.4.Final
+2018-01-05 20:14:29,109 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.5.4.Final
+2018-01-05 20:14:29,130 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2018-01-05 20:14:29,130 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2018-01-05 20:14:29,132 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy version 3.0.24.Final
+2018-01-05 20:14:29,151 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+2018-01-05 20:14:29,154 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final)
+2018-01-05 20:14:29,155 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 1.4.18.Final starting
+2018-01-05 20:14:29,159 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0001: Activating Infinispan subsystem.
+2018-01-05 20:14:29,161 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2018-01-05 20:14:29,164 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+2018-01-05 20:14:29,178 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2018-01-05 20:14:29,188 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2018-01-05 20:14:29,190 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=5.0.2.Final
+2018-01-05 20:14:29,193 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2018-01-05 20:14:29,201 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2018-01-05 20:14:29,202 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = mysql
+2018-01-05 20:14:29,202 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.5.Final
+2018-01-05 20:14:29,206 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2018-01-05 20:14:29,207 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2018-01-05 20:14:29,329 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2018-01-05 20:14:29,331 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2018-01-05 20:14:29,361 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path '/home/aianwhat/Documents/server/wildfly-11.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2018-01-05 20:14:29,369 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2018-01-05 20:14:29,372 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2018-01-05 20:14:29,410 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2018-01-05 20:14:29,447 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0493: EJB subsystem suspension complete
+2018-01-05 20:14:29,645 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2018-01-05 20:14:29,655 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/DiegoDS]
+2018-01-05 20:14:29,656 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2018-01-05 20:14:29,657 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2018-01-05 20:14:29,660 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/deployments
+2018-01-05 20:14:29,669 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "meuorcamento.war" (runtime-name: "meuorcamento.war")
+2018-01-05 20:14:29,766 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2018-01-05 20:14:29,830 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBossWS 5.1.9.Final (Apache CXF 3.1.12) 
+2018-01-05 20:14:30,386 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for meuorcamento-persistence-unit
+2018-01-05 20:14:30,459 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 62) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-05 20:14:30,476 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 62) HHH000204: Processing PersistenceUnitInfo [
+	name: meuorcamento-persistence-unit
+	...]
+2018-01-05 20:14:30,487 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment meuorcamento.war
+2018-01-05 20:14:30,525 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 62) HHH000412: Hibernate Core {5.1.10.Final}
+2018-01-05 20:14:30,526 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000206: hibernate.properties not found
+2018-01-05 20:14:30,528 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000021: Bytecode provider name : javassist
+2018-01-05 20:14:30,537 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 5.3.5.Final
+2018-01-05 20:14:30,556 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 62) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-01-05 20:14:30,628 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-4) WFLYEJB0473: JNDI bindings for session bean named 'ContaDao' in deployment unit 'deployment "meuorcamento.war"' are as follows:
+
+	java:global/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:app/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:module/ContaDao!org.meuorcamento.dao.ContaDao
+	java:global/meuorcamento/ContaDao
+	java:app/meuorcamento/ContaDao
+	java:module/ContaDao
+
+2018-01-05 20:14:30,835 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.8.Final
+2018-01-05 20:14:30,873 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 2.4.3 (Final)
+2018-01-05 20:14:31,054 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-05 20:14:31,099 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started client-mappings cache from ejb container
+2018-01-05 20:14:31,195 ERROR [stderr] (ServerService Thread Pool -- 63) Fri Jan 05 20:14:31 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:31,291 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:31 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:31,295 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:31 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:31,297 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:31 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:31,301 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:31 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:31,303 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:31 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:31,303 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 63) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-01-05 20:14:31,306 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:31 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:31,308 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:31 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:31,310 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:31 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:31,312 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:31 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:31,336 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 63) Envers integration enabled? : true
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63) Hibernate: 
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63)     
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63)     create table Conta (
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63)         id integer not null auto_increment,
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63)         dataPagamento date,
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63)         estado bit not null,
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63)         nome varchar(255),
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63)         repetir bit not null,
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63)         tipoConta varchar(255),
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63)         valor double precision,
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63)         primary key (id)
+2018-01-05 20:14:31,582 INFO  [stdout] (ServerService Thread Pool -- 63)     ) ENGINE=InnoDB
+2018-01-05 20:14:32,167 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 64) Initializing Mojarra 2.2.13.SP4  for context '/meuorcamento'
+2018-01-05 20:14:32,861 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:32,864 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002200: Adding class resource org.meuorcamento.ws.resource.ContaResource from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:32,864 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002205: Adding provider class org.meuorcamento.ws.ResponseFilter from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:32,864 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 64) RESTEASY002205: Adding provider class org.meuorcamento.util.ObjectMapperContextResolver from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:32,974 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 64) WFLYUT0021: Registered web context: '/meuorcamento' for server 'default-server'
+2018-01-05 20:14:32,981 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "meuorcamento.war" (runtime-name : "meuorcamento.war")
+2018-01-05 20:14:33,009 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2018-01-05 20:14:33,010 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2018-01-05 20:14:33,010 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2018-01-05 20:14:33,011 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) started in 5412ms - Started 451 of 676 services (355 services are lazy, passive or on-demand)
+2018-01-05 20:14:45,013 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0236: Suspending server with no timeout.
+2018-01-05 20:14:45,015 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: EJB subsystem suspension complete
+2018-01-05 20:14:45,018 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2018-01-05 20:14:45,047 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 64) WFLYUT0022: Unregistered web context: '/meuorcamento' from server 'default-server'
+2018-01-05 20:14:45,063 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2018-01-05 20:14:45,063 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2018-01-05 20:14:45,077 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2018-01-05 20:14:45,078 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 64) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-05 20:14:45,079 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2018-01-05 20:14:45,082 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 64) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-05 20:14:45,083 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/DiegoDS]
+2018-01-05 20:14:45,084 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = mysql
+2018-01-05 20:14:45,088 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTPS listener https suspending
+2018-01-05 20:14:45,088 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2018-01-05 20:14:45,088 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2018-01-05 20:14:45,089 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2018-01-05 20:14:45,090 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment meuorcamento.war (runtime-name: meuorcamento.war) in 62ms
+2018-01-05 20:14:45,091 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 1.4.18.Final stopping
+2018-01-05 20:14:45,095 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) stopped in 67ms
+2018-01-05 20:14:45,454 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.1.Final
+2018-01-05 20:14:45,667 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1
+2018-01-05 20:14:45,749 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) starting
+2018-01-05 20:14:45,749 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/jboss-modules.jar:/opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/java/jdk1.8.0_151/jre/lib/endorsed
+	java.ext.dirs = /opt/java/jdk1.8.0_151/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/java/jdk1.8.0_151/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_151-b12
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_151
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.151-b12
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final
+	jboss.host.name = aianwhat
+	jboss.modules.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = aianwhat
+	jboss.qualified.host.name = aianwhat
+	jboss.server.base.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	jboss.server.config.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data
+	jboss.server.deploy.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/data/content
+	jboss.server.log.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log
+	jboss.server.name = aianwhat
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties
+	module.path = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules
+	org.jboss.boot.log.file = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.8.0-53-generic
+	path.separator = :
+	program.name = JBossTools: WildFly 11
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/java/jdk1.8.0_151/jre/lib/resources.jar:/opt/java/jdk1.8.0_151/jre/lib/rt.jar:/opt/java/jdk1.8.0_151/jre/lib/sunrsasign.jar:/opt/java/jdk1.8.0_151/jre/lib/jsse.jar:/opt/java/jdk1.8.0_151/jre/lib/jce.jar:/opt/java/jdk1.8.0_151/jre/lib/charsets.jar:/opt/java/jdk1.8.0_151/jre/lib/jfr.jar:/opt/java/jdk1.8.0_151/jre/classes
+	sun.boot.library.path = /opt/java/jdk1.8.0_151/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp /home/aianwhat/Documents/server/wildfly-11.0.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = BR
+	user.dir = /home/aianwhat/Documents/server/wildfly-11.0.0.Final/bin
+	user.home = /home/aianwhat
+	user.language = en
+	user.language.format = pt
+	user.name = aianwhat
+	user.timezone = America/Sao_Paulo
+2018-01-05 20:14:45,750 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -Dprogram.name=JBossTools: WildFly 11 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=/home/aianwhat/Documents/server/wildfly-11.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2018-01-05 20:14:46,636 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-05 20:14:46,653 INFO  [org.wildfly.security] (ServerService Thread Pool -- 16) ELY00001: WildFly Elytron version 1.1.6.Final
+2018-01-05 20:14:46,664 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found meuorcamento.war in deployment directory. To trigger deployment create a file called meuorcamento.war.dodeploy
+2018-01-05 20:14:46,673 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 12) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-05 20:14:46,702 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2018-01-05 20:14:46,714 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.5.4.Final
+2018-01-05 20:14:46,718 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.5.4.Final
+2018-01-05 20:14:46,745 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy version 3.0.24.Final
+2018-01-05 20:14:46,751 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2018-01-05 20:14:46,751 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0001: Activating Infinispan subsystem.
+2018-01-05 20:14:46,758 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2018-01-05 20:14:46,761 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 16 core threads with 128 task threads based on your 8 available processors
+2018-01-05 20:14:46,757 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+2018-01-05 20:14:46,765 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2018-01-05 20:14:46,764 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+2018-01-05 20:14:46,775 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.2.Final
+2018-01-05 20:14:46,777 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.5.Final
+2018-01-05 20:14:46,781 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final)
+2018-01-05 20:14:46,800 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2018-01-05 20:14:46,811 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2018-01-05 20:14:46,821 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2018-01-05 20:14:46,821 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2018-01-05 20:14:46,839 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 1.4.18.Final starting
+2018-01-05 20:14:46,854 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2018-01-05 20:14:46,854 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = mysql
+2018-01-05 20:14:46,934 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2018-01-05 20:14:46,934 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2018-01-05 20:14:46,996 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path '/home/aianwhat/Documents/server/wildfly-11.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2018-01-05 20:14:47,000 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2018-01-05 20:14:47,001 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0018: Host default-host starting
+2018-01-05 20:14:47,052 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2018-01-05 20:14:47,064 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2018-01-05 20:14:47,133 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2018-01-05 20:14:47,133 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/DiegoDS]
+2018-01-05 20:14:47,134 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2018-01-05 20:14:47,143 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2018-01-05 20:14:47,148 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory /home/aianwhat/Documents/server/wildfly-11.0.0.Final/standalone/deployments
+2018-01-05 20:14:47,153 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "meuorcamento.war" (runtime-name: "meuorcamento.war")
+2018-01-05 20:14:47,424 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2018-01-05 20:14:47,460 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBossWS 5.1.9.Final (Apache CXF 3.1.12) 
+2018-01-05 20:14:48,221 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for meuorcamento-persistence-unit
+2018-01-05 20:14:48,305 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 62) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-05 20:14:48,324 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 62) HHH000204: Processing PersistenceUnitInfo [
+	name: meuorcamento-persistence-unit
+	...]
+2018-01-05 20:14:48,341 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment meuorcamento.war
+2018-01-05 20:14:48,380 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 5.3.5.Final
+2018-01-05 20:14:48,380 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 62) HHH000412: Hibernate Core {5.1.10.Final}
+2018-01-05 20:14:48,381 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000206: hibernate.properties not found
+2018-01-05 20:14:48,383 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 62) HHH000021: Bytecode provider name : javassist
+2018-01-05 20:14:48,412 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 62) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-01-05 20:14:48,436 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'ContaDao' in deployment unit 'deployment "meuorcamento.war"' are as follows:
+
+	java:global/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:app/meuorcamento/ContaDao!org.meuorcamento.dao.ContaDao
+	java:module/ContaDao!org.meuorcamento.dao.ContaDao
+	java:global/meuorcamento/ContaDao
+	java:app/meuorcamento/ContaDao
+	java:module/ContaDao
+
+2018-01-05 20:14:48,589 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.8.Final
+2018-01-05 20:14:48,635 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 2.4.3 (Final)
+2018-01-05 20:14:48,815 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'meuorcamento.war#meuorcamento-persistence-unit'
+2018-01-05 20:14:48,839 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started client-mappings cache from ejb container
+2018-01-05 20:14:49,049 ERROR [stderr] (ServerService Thread Pool -- 63) Fri Jan 05 20:14:49 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:49,142 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:49 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:49,145 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:49 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:49,147 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:49 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:49,150 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:49 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:49,151 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 63) HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2018-01-05 20:14:49,152 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:49 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:49,155 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:49 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:49,157 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:49 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:49,159 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:49 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:49,162 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:14:49 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:14:49,177 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 63) Envers integration enabled? : true
+2018-01-05 20:14:49,912 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 62) Initializing Mojarra 2.2.13.SP4  for context '/meuorcamento'
+2018-01-05 20:14:50,506 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 62) RESTEASY002225: Deploying javax.ws.rs.core.Application: class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:50,508 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 62) RESTEASY002205: Adding provider class org.meuorcamento.util.ObjectMapperContextResolver from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:50,508 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 62) RESTEASY002205: Adding provider class org.meuorcamento.ws.ResponseFilter from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:50,508 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 62) RESTEASY002200: Adding class resource org.meuorcamento.ws.resource.ContaResource from Application class org.meuorcamento.ws.ContaApplication$Proxy$_$$_WeldClientProxy
+2018-01-05 20:14:50,735 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0021: Registered web context: '/meuorcamento' for server 'default-server'
+2018-01-05 20:14:50,744 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "meuorcamento.war" (runtime-name : "meuorcamento.war")
+2018-01-05 20:14:50,781 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2018-01-05 20:14:50,783 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2018-01-05 20:14:50,784 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2018-01-05 20:14:50,784 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 11.0.0.Final (WildFly Core 3.0.8.Final) started in 5590ms - Started 451 of 676 services (355 services are lazy, passive or on-demand)
+2018-01-05 20:15:42,179 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,180 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,180 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,180 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,180 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,180 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,180 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,219 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,219 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,219 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,219 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,220 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,220 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,220 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,224 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,224 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,224 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,224 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,224 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,224 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,224 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,228 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,228 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,228 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,228 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,228 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,228 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,228 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,232 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,232 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,232 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,232 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,232 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,232 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,232 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,236 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,236 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,236 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,236 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,236 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,236 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,236 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,239 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,239 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,239 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,239 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,239 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,239 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,239 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,244 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,244 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,244 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,244 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,244 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,244 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,244 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,248 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,248 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,248 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,248 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,248 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,248 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,248 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,251 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,252 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,252 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,252 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,252 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,252 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,252 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,255 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,255 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,255 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,255 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,255 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,255 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,255 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,259 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,259 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,259 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,259 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,259 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,259 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,259 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:15:42,262 INFO  [stdout] (default task-3) Hibernate: 
+2018-01-05 20:15:42,262 INFO  [stdout] (default task-3)     insert 
+2018-01-05 20:15:42,262 INFO  [stdout] (default task-3)     into
+2018-01-05 20:15:42,262 INFO  [stdout] (default task-3)         Conta
+2018-01-05 20:15:42,262 INFO  [stdout] (default task-3)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:15:42,262 INFO  [stdout] (default task-3)     values
+2018-01-05 20:15:42,262 INFO  [stdout] (default task-3)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:17:14,178 INFO  [stdout] (default task-4) Hibernate: 
+2018-01-05 20:17:14,178 INFO  [stdout] (default task-4)     insert 
+2018-01-05 20:17:14,178 INFO  [stdout] (default task-4)     into
+2018-01-05 20:17:14,179 INFO  [stdout] (default task-4)         Conta
+2018-01-05 20:17:14,179 INFO  [stdout] (default task-4)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 20:17:14,179 INFO  [stdout] (default task-4)     values
+2018-01-05 20:17:14,179 INFO  [stdout] (default task-4)         (?, ?, ?, ?, ?, ?)
+2018-01-05 20:17:15,982 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-5) HHH000397: Using ASTQueryTranslatorFactory
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5) Hibernate: 
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)     select
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)         conta0_.id as id1_0_,
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)         conta0_.estado as estado3_0_,
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)         conta0_.nome as nome4_0_,
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)         conta0_.valor as valor7_0_ 
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)     from
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)         Conta conta0_ 
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)     where
+2018-01-05 20:17:16,044 INFO  [stdout] (default task-5)         conta0_.dataPagamento<?
+2018-01-05 20:17:25,765 INFO  [stdout] (default task-6) Hibernate: 
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)     select
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)         conta0_.id as id1_0_,
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)         conta0_.estado as estado3_0_,
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)         conta0_.nome as nome4_0_,
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)         conta0_.valor as valor7_0_ 
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)     from
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)         Conta conta0_ 
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)     where
+2018-01-05 20:17:25,766 INFO  [stdout] (default task-6)         conta0_.dataPagamento<?
+2018-01-05 20:17:59,319 INFO  [stdout] (default task-7) Hibernate: 
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)     select
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)         conta0_.id as id1_0_,
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)         conta0_.estado as estado3_0_,
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)         conta0_.nome as nome4_0_,
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)         conta0_.valor as valor7_0_ 
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)     from
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)         Conta conta0_ 
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)     where
+2018-01-05 20:17:59,320 INFO  [stdout] (default task-7)         conta0_.dataPagamento<?
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8) Hibernate: 
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)     select
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)         conta0_.id as id1_0_,
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)         conta0_.estado as estado3_0_,
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)         conta0_.nome as nome4_0_,
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)         conta0_.valor as valor7_0_ 
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)     from
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)         Conta conta0_ 
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)     where
+2018-01-05 20:24:09,151 INFO  [stdout] (default task-8)         conta0_.dataPagamento<?
+2018-01-05 20:25:39,141 INFO  [stdout] (default task-9) Hibernate: 
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)     select
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)         conta0_.id as id1_0_,
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)         conta0_.estado as estado3_0_,
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)         conta0_.nome as nome4_0_,
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)         conta0_.valor as valor7_0_ 
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)     from
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)         Conta conta0_ 
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)     where
+2018-01-05 20:25:39,142 INFO  [stdout] (default task-9)         conta0_.dataPagamento<?
+2018-01-05 20:26:42,005 INFO  [stdout] (default task-10) Hibernate: 
+2018-01-05 20:26:42,005 INFO  [stdout] (default task-10)     select
+2018-01-05 20:26:42,005 INFO  [stdout] (default task-10)         conta0_.id as id1_0_,
+2018-01-05 20:26:42,006 INFO  [stdout] (default task-10)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:26:42,006 INFO  [stdout] (default task-10)         conta0_.estado as estado3_0_,
+2018-01-05 20:26:42,006 INFO  [stdout] (default task-10)         conta0_.nome as nome4_0_,
+2018-01-05 20:26:42,006 INFO  [stdout] (default task-10)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:26:42,006 INFO  [stdout] (default task-10)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:26:42,006 INFO  [stdout] (default task-10)         conta0_.valor as valor7_0_ 
+2018-01-05 20:26:42,006 INFO  [stdout] (default task-10)     from
+2018-01-05 20:26:42,006 INFO  [stdout] (default task-10)         Conta conta0_ 
+2018-01-05 20:26:42,006 INFO  [stdout] (default task-10)     where
+2018-01-05 20:26:42,006 INFO  [stdout] (default task-10)         conta0_.dataPagamento<?
+2018-01-05 20:27:02,150 INFO  [stdout] (default task-11) Hibernate: 
+2018-01-05 20:27:02,150 INFO  [stdout] (default task-11)     select
+2018-01-05 20:27:02,150 INFO  [stdout] (default task-11)         conta0_.id as id1_0_,
+2018-01-05 20:27:02,150 INFO  [stdout] (default task-11)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:27:02,150 INFO  [stdout] (default task-11)         conta0_.estado as estado3_0_,
+2018-01-05 20:27:02,150 INFO  [stdout] (default task-11)         conta0_.nome as nome4_0_,
+2018-01-05 20:27:02,150 INFO  [stdout] (default task-11)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:27:02,150 INFO  [stdout] (default task-11)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:27:02,150 INFO  [stdout] (default task-11)         conta0_.valor as valor7_0_ 
+2018-01-05 20:27:02,151 INFO  [stdout] (default task-11)     from
+2018-01-05 20:27:02,151 INFO  [stdout] (default task-11)         Conta conta0_ 
+2018-01-05 20:27:02,151 INFO  [stdout] (default task-11)     where
+2018-01-05 20:27:02,151 INFO  [stdout] (default task-11)         conta0_.dataPagamento<?
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12) Hibernate: 
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)     select
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)         conta0_.id as id1_0_,
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)         conta0_.estado as estado3_0_,
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)         conta0_.nome as nome4_0_,
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)         conta0_.valor as valor7_0_ 
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)     from
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)         Conta conta0_ 
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)     where
+2018-01-05 20:27:12,200 INFO  [stdout] (default task-12)         conta0_.dataPagamento<?
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13) Hibernate: 
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)     select
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)         conta0_.id as id1_0_,
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)         conta0_.estado as estado3_0_,
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)         conta0_.nome as nome4_0_,
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)         conta0_.valor as valor7_0_ 
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)     from
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)         Conta conta0_ 
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)     where
+2018-01-05 20:27:28,039 INFO  [stdout] (default task-13)         conta0_.dataPagamento<?
+2018-01-05 20:27:40,918 INFO  [stdout] (default task-14) Hibernate: 
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)     select
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)         conta0_.id as id1_0_,
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)         conta0_.estado as estado3_0_,
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)         conta0_.nome as nome4_0_,
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)         conta0_.valor as valor7_0_ 
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)     from
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)         Conta conta0_ 
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)     where
+2018-01-05 20:27:40,919 INFO  [stdout] (default task-14)         conta0_.dataPagamento<?
+2018-01-05 20:27:53,088 INFO  [stdout] (default task-15) Hibernate: 
+2018-01-05 20:27:53,089 INFO  [stdout] (default task-15)     select
+2018-01-05 20:27:53,089 INFO  [stdout] (default task-15)         conta0_.id as id1_0_,
+2018-01-05 20:27:53,089 INFO  [stdout] (default task-15)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:27:53,089 INFO  [stdout] (default task-15)         conta0_.estado as estado3_0_,
+2018-01-05 20:27:53,089 INFO  [stdout] (default task-15)         conta0_.nome as nome4_0_,
+2018-01-05 20:27:53,089 INFO  [stdout] (default task-15)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:27:53,089 INFO  [stdout] (default task-15)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:27:53,089 INFO  [stdout] (default task-15)         conta0_.valor as valor7_0_ 
+2018-01-05 20:27:53,092 INFO  [stdout] (default task-15)     from
+2018-01-05 20:27:53,092 INFO  [stdout] (default task-15)         Conta conta0_ 
+2018-01-05 20:27:53,092 INFO  [stdout] (default task-15)     where
+2018-01-05 20:27:53,092 INFO  [stdout] (default task-15)         conta0_.dataPagamento<?
+2018-01-05 20:28:18,150 INFO  [stdout] (default task-16) Hibernate: 
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)     select
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)         conta0_.id as id1_0_,
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)         conta0_.estado as estado3_0_,
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)         conta0_.nome as nome4_0_,
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)         conta0_.valor as valor7_0_ 
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)     from
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)         Conta conta0_ 
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)     where
+2018-01-05 20:28:18,151 INFO  [stdout] (default task-16)         conta0_.dataPagamento<?
+2018-01-05 20:38:43,042 INFO  [stdout] (default task-17) Hibernate: 
+2018-01-05 20:38:43,042 INFO  [stdout] (default task-17)     select
+2018-01-05 20:38:43,042 INFO  [stdout] (default task-17)         conta0_.id as id1_0_,
+2018-01-05 20:38:43,042 INFO  [stdout] (default task-17)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:38:43,042 INFO  [stdout] (default task-17)         conta0_.estado as estado3_0_,
+2018-01-05 20:38:43,042 INFO  [stdout] (default task-17)         conta0_.nome as nome4_0_,
+2018-01-05 20:38:43,042 INFO  [stdout] (default task-17)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:38:43,042 INFO  [stdout] (default task-17)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:38:43,043 INFO  [stdout] (default task-17)         conta0_.valor as valor7_0_ 
+2018-01-05 20:38:43,043 INFO  [stdout] (default task-17)     from
+2018-01-05 20:38:43,043 INFO  [stdout] (default task-17)         Conta conta0_ 
+2018-01-05 20:38:43,043 INFO  [stdout] (default task-17)     where
+2018-01-05 20:38:43,043 INFO  [stdout] (default task-17)         conta0_.dataPagamento<?
+2018-01-05 20:38:52,284 INFO  [stdout] (default task-18) Hibernate: 
+2018-01-05 20:38:52,284 INFO  [stdout] (default task-18)     select
+2018-01-05 20:38:52,284 INFO  [stdout] (default task-18)         conta0_.id as id1_0_,
+2018-01-05 20:38:52,284 INFO  [stdout] (default task-18)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:38:52,284 INFO  [stdout] (default task-18)         conta0_.estado as estado3_0_,
+2018-01-05 20:38:52,284 INFO  [stdout] (default task-18)         conta0_.nome as nome4_0_,
+2018-01-05 20:38:52,285 INFO  [stdout] (default task-18)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:38:52,285 INFO  [stdout] (default task-18)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:38:52,285 INFO  [stdout] (default task-18)         conta0_.valor as valor7_0_ 
+2018-01-05 20:38:52,285 INFO  [stdout] (default task-18)     from
+2018-01-05 20:38:52,285 INFO  [stdout] (default task-18)         Conta conta0_ 
+2018-01-05 20:38:52,285 INFO  [stdout] (default task-18)     where
+2018-01-05 20:38:52,285 INFO  [stdout] (default task-18)         conta0_.dataPagamento<?
+2018-01-05 20:39:44,529 INFO  [stdout] (default task-19) Hibernate: 
+2018-01-05 20:39:44,529 INFO  [stdout] (default task-19)     select
+2018-01-05 20:39:44,529 INFO  [stdout] (default task-19)         conta0_.id as id1_0_,
+2018-01-05 20:39:44,529 INFO  [stdout] (default task-19)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:39:44,529 INFO  [stdout] (default task-19)         conta0_.estado as estado3_0_,
+2018-01-05 20:39:44,529 INFO  [stdout] (default task-19)         conta0_.nome as nome4_0_,
+2018-01-05 20:39:44,529 INFO  [stdout] (default task-19)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:39:44,529 INFO  [stdout] (default task-19)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:39:44,529 INFO  [stdout] (default task-19)         conta0_.valor as valor7_0_ 
+2018-01-05 20:39:44,529 INFO  [stdout] (default task-19)     from
+2018-01-05 20:39:44,529 INFO  [stdout] (default task-19)         Conta conta0_ 
+2018-01-05 20:39:44,530 INFO  [stdout] (default task-19)     where
+2018-01-05 20:39:44,530 INFO  [stdout] (default task-19)         conta0_.dataPagamento<?
+2018-01-05 20:40:30,551 INFO  [stdout] (default task-20) Hibernate: 
+2018-01-05 20:40:30,551 INFO  [stdout] (default task-20)     select
+2018-01-05 20:40:30,551 INFO  [stdout] (default task-20)         conta0_.id as id1_0_,
+2018-01-05 20:40:30,551 INFO  [stdout] (default task-20)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:40:30,551 INFO  [stdout] (default task-20)         conta0_.estado as estado3_0_,
+2018-01-05 20:40:30,551 INFO  [stdout] (default task-20)         conta0_.nome as nome4_0_,
+2018-01-05 20:40:30,552 INFO  [stdout] (default task-20)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:40:30,552 INFO  [stdout] (default task-20)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:40:30,552 INFO  [stdout] (default task-20)         conta0_.valor as valor7_0_ 
+2018-01-05 20:40:30,552 INFO  [stdout] (default task-20)     from
+2018-01-05 20:40:30,552 INFO  [stdout] (default task-20)         Conta conta0_ 
+2018-01-05 20:40:30,552 INFO  [stdout] (default task-20)     where
+2018-01-05 20:40:30,552 INFO  [stdout] (default task-20)         conta0_.dataPagamento<?
+2018-01-05 20:40:36,224 INFO  [stdout] (default task-21) Hibernate: 
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)     select
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)         conta0_.id as id1_0_,
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)         conta0_.estado as estado3_0_,
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)         conta0_.nome as nome4_0_,
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)         conta0_.valor as valor7_0_ 
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)     from
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)         Conta conta0_ 
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)     where
+2018-01-05 20:40:36,225 INFO  [stdout] (default task-21)         conta0_.dataPagamento<?
+2018-01-05 20:40:40,744 INFO  [stdout] (default task-22) Hibernate: 
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)     select
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)         conta0_.id as id1_0_,
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)         conta0_.estado as estado3_0_,
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)         conta0_.nome as nome4_0_,
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)         conta0_.valor as valor7_0_ 
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)     from
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)         Conta conta0_ 
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)     where
+2018-01-05 20:40:40,745 INFO  [stdout] (default task-22)         conta0_.dataPagamento<?
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23) Hibernate: 
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)     select
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)         conta0_.id as id1_0_,
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)         conta0_.estado as estado3_0_,
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)         conta0_.nome as nome4_0_,
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)         conta0_.valor as valor7_0_ 
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)     from
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)         Conta conta0_ 
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)     where
+2018-01-05 20:40:49,644 INFO  [stdout] (default task-23)         conta0_.dataPagamento<?
+2018-01-05 20:41:03,075 INFO  [stdout] (default task-24) Hibernate: 
+2018-01-05 20:41:03,075 INFO  [stdout] (default task-24)     select
+2018-01-05 20:41:03,075 INFO  [stdout] (default task-24)         conta0_.id as id1_0_,
+2018-01-05 20:41:03,075 INFO  [stdout] (default task-24)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:41:03,076 INFO  [stdout] (default task-24)         conta0_.estado as estado3_0_,
+2018-01-05 20:41:03,076 INFO  [stdout] (default task-24)         conta0_.nome as nome4_0_,
+2018-01-05 20:41:03,076 INFO  [stdout] (default task-24)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:41:03,076 INFO  [stdout] (default task-24)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:41:03,076 INFO  [stdout] (default task-24)         conta0_.valor as valor7_0_ 
+2018-01-05 20:41:03,076 INFO  [stdout] (default task-24)     from
+2018-01-05 20:41:03,076 INFO  [stdout] (default task-24)         Conta conta0_ 
+2018-01-05 20:41:03,076 INFO  [stdout] (default task-24)     where
+2018-01-05 20:41:03,076 INFO  [stdout] (default task-24)         conta0_.dataPagamento<?
+2018-01-05 20:41:22,430 INFO  [stdout] (default task-25) Hibernate: 
+2018-01-05 20:41:22,430 INFO  [stdout] (default task-25)     select
+2018-01-05 20:41:22,430 INFO  [stdout] (default task-25)         conta0_.id as id1_0_,
+2018-01-05 20:41:22,430 INFO  [stdout] (default task-25)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:41:22,430 INFO  [stdout] (default task-25)         conta0_.estado as estado3_0_,
+2018-01-05 20:41:22,430 INFO  [stdout] (default task-25)         conta0_.nome as nome4_0_,
+2018-01-05 20:41:22,430 INFO  [stdout] (default task-25)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:41:22,430 INFO  [stdout] (default task-25)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:41:22,430 INFO  [stdout] (default task-25)         conta0_.valor as valor7_0_ 
+2018-01-05 20:41:22,431 INFO  [stdout] (default task-25)     from
+2018-01-05 20:41:22,431 INFO  [stdout] (default task-25)         Conta conta0_ 
+2018-01-05 20:41:22,431 INFO  [stdout] (default task-25)     where
+2018-01-05 20:41:22,431 INFO  [stdout] (default task-25)         conta0_.dataPagamento<?
+2018-01-05 20:41:28,196 INFO  [stdout] (default task-26) Hibernate: 
+2018-01-05 20:41:28,196 INFO  [stdout] (default task-26)     select
+2018-01-05 20:41:28,196 INFO  [stdout] (default task-26)         conta0_.id as id1_0_,
+2018-01-05 20:41:28,196 INFO  [stdout] (default task-26)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:41:28,196 INFO  [stdout] (default task-26)         conta0_.estado as estado3_0_,
+2018-01-05 20:41:28,196 INFO  [stdout] (default task-26)         conta0_.nome as nome4_0_,
+2018-01-05 20:41:28,196 INFO  [stdout] (default task-26)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:41:28,196 INFO  [stdout] (default task-26)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:41:28,197 INFO  [stdout] (default task-26)         conta0_.valor as valor7_0_ 
+2018-01-05 20:41:28,197 INFO  [stdout] (default task-26)     from
+2018-01-05 20:41:28,197 INFO  [stdout] (default task-26)         Conta conta0_ 
+2018-01-05 20:41:28,197 INFO  [stdout] (default task-26)     where
+2018-01-05 20:41:28,197 INFO  [stdout] (default task-26)         conta0_.dataPagamento<?
+2018-01-05 20:41:57,769 INFO  [stdout] (default task-27) Hibernate: 
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)     select
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)         conta0_.id as id1_0_,
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)         conta0_.estado as estado3_0_,
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)         conta0_.nome as nome4_0_,
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)         conta0_.valor as valor7_0_ 
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)     from
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)         Conta conta0_ 
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)     where
+2018-01-05 20:41:57,770 INFO  [stdout] (default task-27)         conta0_.dataPagamento<?
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28) Hibernate: 
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)     select
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)         conta0_.id as id1_0_,
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)         conta0_.estado as estado3_0_,
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)         conta0_.nome as nome4_0_,
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)         conta0_.valor as valor7_0_ 
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)     from
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)         Conta conta0_ 
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)     where
+2018-01-05 20:44:14,377 INFO  [stdout] (default task-28)         conta0_.dataPagamento<?
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29) Hibernate: 
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)     select
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)         conta0_.id as id1_0_,
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)         conta0_.estado as estado3_0_,
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)         conta0_.nome as nome4_0_,
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)         conta0_.valor as valor7_0_ 
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)     from
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)         Conta conta0_ 
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)     where
+2018-01-05 20:44:24,121 INFO  [stdout] (default task-29)         conta0_.dataPagamento<?
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30) Hibernate: 
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)     select
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)         conta0_.id as id1_0_,
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)         conta0_.estado as estado3_0_,
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)         conta0_.nome as nome4_0_,
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)         conta0_.valor as valor7_0_ 
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)     from
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)         Conta conta0_ 
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)     where
+2018-01-05 20:48:27,832 INFO  [stdout] (default task-30)         conta0_.dataPagamento<?
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31) Hibernate: 
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)     select
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)         conta0_.id as id1_0_,
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)         conta0_.estado as estado3_0_,
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)         conta0_.nome as nome4_0_,
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)         conta0_.valor as valor7_0_ 
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)     from
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)         Conta conta0_ 
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)     where
+2018-01-05 20:48:59,190 INFO  [stdout] (default task-31)         conta0_.dataPagamento<?
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32) Hibernate: 
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)     select
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)         conta0_.id as id1_0_,
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)         conta0_.estado as estado3_0_,
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)         conta0_.nome as nome4_0_,
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)         conta0_.valor as valor7_0_ 
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)     from
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)         Conta conta0_ 
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)     where
+2018-01-05 20:49:19,303 INFO  [stdout] (default task-32)         conta0_.dataPagamento<?
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33) Hibernate: 
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)     select
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)         conta0_.id as id1_0_,
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)         conta0_.estado as estado3_0_,
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)         conta0_.nome as nome4_0_,
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)         conta0_.valor as valor7_0_ 
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)     from
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)         Conta conta0_ 
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)     where
+2018-01-05 20:49:44,687 INFO  [stdout] (default task-33)         conta0_.dataPagamento<?
+2018-01-05 20:50:13,625 INFO  [stdout] (default task-34) Hibernate: 
+2018-01-05 20:50:13,625 INFO  [stdout] (default task-34)     select
+2018-01-05 20:50:13,625 INFO  [stdout] (default task-34)         conta0_.id as id1_0_,
+2018-01-05 20:50:13,625 INFO  [stdout] (default task-34)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:50:13,625 INFO  [stdout] (default task-34)         conta0_.estado as estado3_0_,
+2018-01-05 20:50:13,625 INFO  [stdout] (default task-34)         conta0_.nome as nome4_0_,
+2018-01-05 20:50:13,625 INFO  [stdout] (default task-34)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:50:13,625 INFO  [stdout] (default task-34)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:50:13,625 INFO  [stdout] (default task-34)         conta0_.valor as valor7_0_ 
+2018-01-05 20:50:13,625 INFO  [stdout] (default task-34)     from
+2018-01-05 20:50:13,625 INFO  [stdout] (default task-34)         Conta conta0_ 
+2018-01-05 20:50:13,626 INFO  [stdout] (default task-34)     where
+2018-01-05 20:50:13,626 INFO  [stdout] (default task-34)         conta0_.dataPagamento<?
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35) Hibernate: 
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)     select
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)         conta0_.id as id1_0_,
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)         conta0_.estado as estado3_0_,
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)         conta0_.nome as nome4_0_,
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)         conta0_.valor as valor7_0_ 
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)     from
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)         Conta conta0_ 
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)     where
+2018-01-05 20:54:11,442 INFO  [stdout] (default task-35)         conta0_.dataPagamento<?
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36) Hibernate: 
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)     select
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)         conta0_.id as id1_0_,
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)         conta0_.estado as estado3_0_,
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)         conta0_.nome as nome4_0_,
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)         conta0_.valor as valor7_0_ 
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)     from
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)         Conta conta0_ 
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)     where
+2018-01-05 20:54:25,650 INFO  [stdout] (default task-36)         conta0_.dataPagamento<?
+2018-01-05 20:54:28,016 INFO  [stdout] (default task-37) Hibernate: 
+2018-01-05 20:54:28,016 INFO  [stdout] (default task-37)     select
+2018-01-05 20:54:28,016 INFO  [stdout] (default task-37)         conta0_.id as id1_0_,
+2018-01-05 20:54:28,016 INFO  [stdout] (default task-37)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:54:28,016 INFO  [stdout] (default task-37)         conta0_.estado as estado3_0_,
+2018-01-05 20:54:28,016 INFO  [stdout] (default task-37)         conta0_.nome as nome4_0_,
+2018-01-05 20:54:28,017 INFO  [stdout] (default task-37)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:54:28,017 INFO  [stdout] (default task-37)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:54:28,017 INFO  [stdout] (default task-37)         conta0_.valor as valor7_0_ 
+2018-01-05 20:54:28,017 INFO  [stdout] (default task-37)     from
+2018-01-05 20:54:28,017 INFO  [stdout] (default task-37)         Conta conta0_ 
+2018-01-05 20:54:28,017 INFO  [stdout] (default task-37)     where
+2018-01-05 20:54:28,017 INFO  [stdout] (default task-37)         conta0_.dataPagamento<?
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38) Hibernate: 
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)     select
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)         conta0_.id as id1_0_,
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)         conta0_.estado as estado3_0_,
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)         conta0_.nome as nome4_0_,
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)         conta0_.valor as valor7_0_ 
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)     from
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)         Conta conta0_ 
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)     where
+2018-01-05 20:54:37,897 INFO  [stdout] (default task-38)         conta0_.dataPagamento<?
+2018-01-05 20:54:48,404 INFO  [stdout] (default task-39) Hibernate: 
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)     select
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)         conta0_.id as id1_0_,
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)         conta0_.estado as estado3_0_,
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)         conta0_.nome as nome4_0_,
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)         conta0_.valor as valor7_0_ 
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)     from
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)         Conta conta0_ 
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)     where
+2018-01-05 20:54:48,405 INFO  [stdout] (default task-39)         conta0_.dataPagamento<?
+2018-01-05 20:59:44,454 INFO  [stdout] (default task-40) Hibernate: 
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)     select
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)         conta0_.id as id1_0_,
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)         conta0_.estado as estado3_0_,
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)         conta0_.nome as nome4_0_,
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)         conta0_.repetir as repetir5_0_,
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)         conta0_.valor as valor7_0_ 
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)     from
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)         Conta conta0_ 
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)     where
+2018-01-05 20:59:44,455 INFO  [stdout] (default task-40)         conta0_.dataPagamento<?
+2018-01-05 20:59:47,130 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:59:47,133 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:59:47,135 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:59:47,136 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:59:47,138 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:59:47,140 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:59:47,142 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:59:47,143 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 20:59:47,144 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 20:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 21:00:15,500 INFO  [stdout] (default task-41) Hibernate: 
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)     select
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)         conta0_.id as id1_0_,
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)         conta0_.estado as estado3_0_,
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)         conta0_.nome as nome4_0_,
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)         conta0_.valor as valor7_0_ 
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)     from
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)         Conta conta0_ 
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)     where
+2018-01-05 21:00:15,501 INFO  [stdout] (default task-41)         conta0_.dataPagamento<?
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42) Hibernate: 
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)     select
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)         conta0_.id as id1_0_,
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)         conta0_.estado as estado3_0_,
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)         conta0_.nome as nome4_0_,
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)         conta0_.valor as valor7_0_ 
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)     from
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)         Conta conta0_ 
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)     where
+2018-01-05 21:01:13,765 INFO  [stdout] (default task-42)         conta0_.dataPagamento<?
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43) Hibernate: 
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)     select
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)         conta0_.id as id1_0_,
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)         conta0_.estado as estado3_0_,
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)         conta0_.nome as nome4_0_,
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)         conta0_.valor as valor7_0_ 
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)     from
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)         Conta conta0_ 
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)     where
+2018-01-05 21:01:39,748 INFO  [stdout] (default task-43)         conta0_.dataPagamento<?
+2018-01-05 21:02:52,605 INFO  [stdout] (default task-44) Hibernate: 
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)     select
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)         conta0_.id as id1_0_,
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)         conta0_.estado as estado3_0_,
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)         conta0_.nome as nome4_0_,
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)         conta0_.valor as valor7_0_ 
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)     from
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)         Conta conta0_ 
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)     where
+2018-01-05 21:02:52,606 INFO  [stdout] (default task-44)         conta0_.dataPagamento<?
+2018-01-05 21:03:09,614 INFO  [stdout] (default task-45) Hibernate: 
+2018-01-05 21:03:09,614 INFO  [stdout] (default task-45)     select
+2018-01-05 21:03:09,614 INFO  [stdout] (default task-45)         conta0_.id as id1_0_,
+2018-01-05 21:03:09,614 INFO  [stdout] (default task-45)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:03:09,615 INFO  [stdout] (default task-45)         conta0_.estado as estado3_0_,
+2018-01-05 21:03:09,615 INFO  [stdout] (default task-45)         conta0_.nome as nome4_0_,
+2018-01-05 21:03:09,615 INFO  [stdout] (default task-45)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:03:09,615 INFO  [stdout] (default task-45)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:03:09,615 INFO  [stdout] (default task-45)         conta0_.valor as valor7_0_ 
+2018-01-05 21:03:09,615 INFO  [stdout] (default task-45)     from
+2018-01-05 21:03:09,615 INFO  [stdout] (default task-45)         Conta conta0_ 
+2018-01-05 21:03:09,615 INFO  [stdout] (default task-45)     where
+2018-01-05 21:03:09,615 INFO  [stdout] (default task-45)         conta0_.dataPagamento<?
+2018-01-05 21:03:29,610 INFO  [stdout] (default task-46) Hibernate: 
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)     select
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)         conta0_.id as id1_0_,
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)         conta0_.estado as estado3_0_,
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)         conta0_.nome as nome4_0_,
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)         conta0_.valor as valor7_0_ 
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)     from
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)         Conta conta0_ 
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)     where
+2018-01-05 21:03:29,611 INFO  [stdout] (default task-46)         conta0_.dataPagamento<?
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47) Hibernate: 
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)     select
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)         conta0_.id as id1_0_,
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)         conta0_.estado as estado3_0_,
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)         conta0_.nome as nome4_0_,
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)         conta0_.valor as valor7_0_ 
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)     from
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)         Conta conta0_ 
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)     where
+2018-01-05 21:03:34,814 INFO  [stdout] (default task-47)         conta0_.dataPagamento<?
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48) Hibernate: 
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)     select
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)         conta0_.id as id1_0_,
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)         conta0_.estado as estado3_0_,
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)         conta0_.nome as nome4_0_,
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)         conta0_.valor as valor7_0_ 
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)     from
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)         Conta conta0_ 
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)     where
+2018-01-05 21:05:22,785 INFO  [stdout] (default task-48)         conta0_.dataPagamento<?
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49) Hibernate: 
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)     select
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)         conta0_.id as id1_0_,
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)         conta0_.estado as estado3_0_,
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)         conta0_.nome as nome4_0_,
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)         conta0_.valor as valor7_0_ 
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)     from
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)         Conta conta0_ 
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)     where
+2018-01-05 21:05:53,748 INFO  [stdout] (default task-49)         conta0_.dataPagamento<?
+2018-01-05 21:06:15,030 INFO  [stdout] (default task-50) Hibernate: 
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)     select
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)         conta0_.id as id1_0_,
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)         conta0_.estado as estado3_0_,
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)         conta0_.nome as nome4_0_,
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)         conta0_.valor as valor7_0_ 
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)     from
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)         Conta conta0_ 
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)     where
+2018-01-05 21:06:15,031 INFO  [stdout] (default task-50)         conta0_.dataPagamento<?
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51) Hibernate: 
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)     select
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)         conta0_.id as id1_0_,
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)         conta0_.estado as estado3_0_,
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)         conta0_.nome as nome4_0_,
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)         conta0_.valor as valor7_0_ 
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)     from
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)         Conta conta0_ 
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)     where
+2018-01-05 21:08:38,841 INFO  [stdout] (default task-51)         conta0_.dataPagamento<?
+2018-01-05 21:08:59,646 INFO  [stdout] (default task-52) Hibernate: 
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)     select
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)         conta0_.id as id1_0_,
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)         conta0_.estado as estado3_0_,
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)         conta0_.nome as nome4_0_,
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)         conta0_.valor as valor7_0_ 
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)     from
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)         Conta conta0_ 
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)     where
+2018-01-05 21:08:59,647 INFO  [stdout] (default task-52)         conta0_.dataPagamento<?
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53) Hibernate: 
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)     select
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)         conta0_.id as id1_0_,
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)         conta0_.estado as estado3_0_,
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)         conta0_.nome as nome4_0_,
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)         conta0_.valor as valor7_0_ 
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)     from
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)         Conta conta0_ 
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)     where
+2018-01-05 21:09:22,582 INFO  [stdout] (default task-53)         conta0_.dataPagamento<?
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54) Hibernate: 
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)     select
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)         conta0_.id as id1_0_,
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)         conta0_.estado as estado3_0_,
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)         conta0_.nome as nome4_0_,
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)         conta0_.valor as valor7_0_ 
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)     from
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)         Conta conta0_ 
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)     where
+2018-01-05 21:10:19,104 INFO  [stdout] (default task-54)         conta0_.dataPagamento<?
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55) Hibernate: 
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)     select
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)         conta0_.id as id1_0_,
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)         conta0_.estado as estado3_0_,
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)         conta0_.nome as nome4_0_,
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)         conta0_.valor as valor7_0_ 
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)     from
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)         Conta conta0_ 
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)     where
+2018-01-05 21:12:09,476 INFO  [stdout] (default task-55)         conta0_.dataPagamento<?
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56) Hibernate: 
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)     select
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)         conta0_.id as id1_0_,
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)         conta0_.estado as estado3_0_,
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)         conta0_.nome as nome4_0_,
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)         conta0_.valor as valor7_0_ 
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)     from
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)         Conta conta0_ 
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)     where
+2018-01-05 21:12:20,577 INFO  [stdout] (default task-56)         conta0_.dataPagamento<?
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57) Hibernate: 
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)     select
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)         conta0_.id as id1_0_,
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)         conta0_.estado as estado3_0_,
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)         conta0_.nome as nome4_0_,
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)         conta0_.valor as valor7_0_ 
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)     from
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)         Conta conta0_ 
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)     where
+2018-01-05 21:17:23,678 INFO  [stdout] (default task-57)         conta0_.dataPagamento<?
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58) Hibernate: 
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58)     select
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58)         conta0_.id as id1_0_,
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58)         conta0_.estado as estado3_0_,
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58)         conta0_.nome as nome4_0_,
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58)         conta0_.valor as valor7_0_ 
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58)     from
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58)         Conta conta0_ 
+2018-01-05 21:19:18,087 INFO  [stdout] (default task-58)     where
+2018-01-05 21:19:18,088 INFO  [stdout] (default task-58)         conta0_.dataPagamento<?
+2018-01-05 21:29:47,131 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 21:29:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 21:37:52,407 INFO  [stdout] (default task-59) Hibernate: 
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)     select
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)         conta0_.id as id1_0_,
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)         conta0_.estado as estado3_0_,
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)         conta0_.nome as nome4_0_,
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)         conta0_.valor as valor7_0_ 
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)     from
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)         Conta conta0_ 
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)     where
+2018-01-05 21:37:52,408 INFO  [stdout] (default task-59)         conta0_.dataPagamento<?
+2018-01-05 21:38:48,075 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,076 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,076 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,076 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,076 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,076 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,076 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,079 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,080 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,080 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,080 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,080 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,080 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,080 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,083 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,083 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,083 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,083 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,083 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,083 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,083 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,086 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,086 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,086 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,086 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,086 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,086 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,086 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,089 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,089 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,089 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,089 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,089 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,089 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,089 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,091 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,091 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,091 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,091 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,091 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,091 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,091 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,094 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,094 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,094 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,094 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,094 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,094 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,094 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,096 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,096 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,096 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,096 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,096 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,096 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,096 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,099 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,099 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,099 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,099 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,099 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,099 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,099 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,102 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,102 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,102 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,102 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,102 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,102 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,102 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,104 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,104 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,104 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,105 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,105 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,105 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,105 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,108 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,108 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,108 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,108 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,108 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,108 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,108 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:48,111 INFO  [stdout] (default task-61) Hibernate: 
+2018-01-05 21:38:48,111 INFO  [stdout] (default task-61)     insert 
+2018-01-05 21:38:48,111 INFO  [stdout] (default task-61)     into
+2018-01-05 21:38:48,111 INFO  [stdout] (default task-61)         Conta
+2018-01-05 21:38:48,111 INFO  [stdout] (default task-61)         (dataPagamento, estado, nome, repetir, tipoConta, valor) 
+2018-01-05 21:38:48,111 INFO  [stdout] (default task-61)     values
+2018-01-05 21:38:48,111 INFO  [stdout] (default task-61)         (?, ?, ?, ?, ?, ?)
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62) Hibernate: 
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)     select
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)         conta0_.id as id1_0_,
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)         conta0_.estado as estado3_0_,
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)         conta0_.nome as nome4_0_,
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)         conta0_.valor as valor7_0_ 
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)     from
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)         Conta conta0_ 
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)     where
+2018-01-05 21:38:50,109 INFO  [stdout] (default task-62)         conta0_.dataPagamento<?
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63) Hibernate: 
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)     select
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)         conta0_.id as id1_0_,
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)         conta0_.estado as estado3_0_,
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)         conta0_.nome as nome4_0_,
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)         conta0_.valor as valor7_0_ 
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)     from
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)         Conta conta0_ 
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)     where
+2018-01-05 21:41:22,838 INFO  [stdout] (default task-63)         conta0_.dataPagamento<?
+2018-01-05 21:41:26,091 INFO  [stdout] (default task-64) Hibernate: 
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)     select
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)         conta0_.id as id1_0_,
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)         conta0_.estado as estado3_0_,
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)         conta0_.nome as nome4_0_,
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)         conta0_.valor as valor7_0_ 
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)     from
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)         Conta conta0_ 
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)     where
+2018-01-05 21:41:26,092 INFO  [stdout] (default task-64)         conta0_.dataPagamento<?
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65) Hibernate: 
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)     select
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)         conta0_.id as id1_0_,
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)         conta0_.estado as estado3_0_,
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)         conta0_.nome as nome4_0_,
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)         conta0_.valor as valor7_0_ 
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)     from
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)         Conta conta0_ 
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)     where
+2018-01-05 21:41:33,026 INFO  [stdout] (default task-65)         conta0_.dataPagamento<?
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66) Hibernate: 
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)     select
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)         conta0_.id as id1_0_,
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)         conta0_.estado as estado3_0_,
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)         conta0_.nome as nome4_0_,
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)         conta0_.valor as valor7_0_ 
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)     from
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)         Conta conta0_ 
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)     where
+2018-01-05 21:42:11,523 INFO  [stdout] (default task-66)         conta0_.dataPagamento<?
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67) Hibernate: 
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)     select
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)         conta0_.id as id1_0_,
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)         conta0_.estado as estado3_0_,
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)         conta0_.nome as nome4_0_,
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)         conta0_.valor as valor7_0_ 
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)     from
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)         Conta conta0_ 
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)     where
+2018-01-05 21:42:14,449 INFO  [stdout] (default task-67)         conta0_.dataPagamento<?
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68) Hibernate: 
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)     select
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)         conta0_.id as id1_0_,
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)         conta0_.estado as estado3_0_,
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)         conta0_.nome as nome4_0_,
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)         conta0_.valor as valor7_0_ 
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)     from
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)         Conta conta0_ 
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)     where
+2018-01-05 21:42:39,833 INFO  [stdout] (default task-68)         conta0_.dataPagamento<?
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69) Hibernate: 
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)     select
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)         conta0_.id as id1_0_,
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)         conta0_.estado as estado3_0_,
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)         conta0_.nome as nome4_0_,
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)         conta0_.valor as valor7_0_ 
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)     from
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)         Conta conta0_ 
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)     where
+2018-01-05 21:43:24,418 INFO  [stdout] (default task-69)         conta0_.dataPagamento<?
+2018-01-05 21:44:47,134 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 21:44:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 21:44:47,136 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 21:44:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 21:44:47,137 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 21:44:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 21:44:47,138 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 21:44:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 21:44:47,140 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 21:44:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 21:44:47,141 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 21:44:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 21:44:47,143 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 21:44:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 21:44:47,144 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 21:44:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70) Hibernate: 
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)     select
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)         conta0_.id as id1_0_,
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)         conta0_.estado as estado3_0_,
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)         conta0_.nome as nome4_0_,
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)         conta0_.valor as valor7_0_ 
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)     from
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)         Conta conta0_ 
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)     where
+2018-01-05 21:50:31,632 INFO  [stdout] (default task-70)         conta0_.dataPagamento<?
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71) Hibernate: 
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)     select
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)         conta0_.id as id1_0_,
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)         conta0_.estado as estado3_0_,
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)         conta0_.nome as nome4_0_,
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)         conta0_.valor as valor7_0_ 
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)     from
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)         Conta conta0_ 
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)     where
+2018-01-05 21:52:23,962 INFO  [stdout] (default task-71)         conta0_.dataPagamento<?
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72) Hibernate: 
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)     select
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)         conta0_.id as id1_0_,
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)         conta0_.dataPagamento as dataPaga2_0_,
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)         conta0_.estado as estado3_0_,
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)         conta0_.nome as nome4_0_,
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)         conta0_.repetir as repetir5_0_,
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)         conta0_.tipoConta as tipoCont6_0_,
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)         conta0_.valor as valor7_0_ 
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)     from
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)         Conta conta0_ 
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)     where
+2018-01-05 21:52:46,549 INFO  [stdout] (default task-72)         conta0_.dataPagamento<?
+2018-01-05 21:59:47,136 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 21:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 22:14:47,136 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 22:14:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 22:29:47,142 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 22:29:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 22:29:47,144 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 22:29:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 22:29:47,148 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 22:29:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 22:29:47,150 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 22:29:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 22:29:47,152 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 22:29:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 22:29:47,154 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 22:29:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 22:29:47,155 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 22:29:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 22:29:47,157 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 22:29:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 22:44:47,144 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 22:44:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 22:44:47,146 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 22:44:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:14:47,145 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:14:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:14:47,147 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:14:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:14:47,148 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:14:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:14:47,149 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:14:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:14:47,151 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:14:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:14:47,152 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:14:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:14:47,154 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:14:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:14:47,156 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:14:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:29:47,147 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:29:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:29:47,148 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:29:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:59:47,152 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:59:47,154 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:59:47,155 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:59:47,157 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:59:47,158 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:59:47,159 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:59:47,161 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+2018-01-05 23:59:47,162 ERROR [stderr] (JCA PoolFiller) Fri Jan 05 23:59:47 BRST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
