@@ -27,9 +27,14 @@ public class UsuarioResource {
 	
 	@POST
 	@Path("/gerar")
-	public void geraSenha(@Valid Usuario usuario) {
-		dao.inserir(usuario);
+	public Response geraSenha(@Valid Usuario usuario) {
 		System.out.println("Gerando usuario: " + usuario.getId() + " - " + usuario.getNome() + " - " + usuario.getSenha() + " - " + usuario.isEstado());
+		boolean validar = dao.inserir(usuario);
+		if(validar) {
+			return Response.ok().build();
+		}else {
+			return Response.status(Status.FORBIDDEN).build();
+		}
 	}
 	
 	@PUT
