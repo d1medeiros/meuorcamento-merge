@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import {Link} from 'react-router';
 import FaPlus from 'react-icons/lib/fa/plus';
 import TRContas from './componentes/TRContas';
+
 // import Popup from './componentes/Popup';
 import PubSub from 'pubsub-js';
 import $ from 'jquery';
@@ -29,6 +30,9 @@ class Contas extends Component{
 
     componentDidMount(){  
         console.log("didMount");
+
+
+
         $.ajax({
             url:"http://localhost:8080/meuorcamento/api/conta/atual",
             dataType: 'json',

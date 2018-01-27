@@ -28,7 +28,7 @@ public class UsuarioResource {
 	@POST
 	@Path("/gerar")
 	public Response geraSenha(@Valid Usuario usuario) {
-		System.out.println("Gerando usuario: " + usuario.getId() + " - " + usuario.getNome() + " - " + usuario.getSenha() + " - " + usuario.isEstado());
+		System.out.println("Gerando usuario: " + usuario.getId() + " - " + usuario.getLogin() + " - " + usuario.getNome() + " - " + usuario.getSenha() + " - " + usuario.isEstado());
 		boolean validar = dao.inserir(usuario);
 		if(validar) {
 			return Response.ok().build();
@@ -43,8 +43,10 @@ public class UsuarioResource {
 		String usuarioValido = dao.loga(usuario);
 		boolean validar = usuarioValido != null ? true : false;
 		
+		System.out.println("dmedeiros :: getUsuario - token : " + usuarioValido);
+		
 		JSONObject jsonObject = new JSONObject();
-		jsonObject.append("auth-token", usuarioValido);
+		jsonObject.putOpt("authtoken", usuarioValido);
 		if(validar) {
 			return Response.ok(jsonObject.toString()).build();
 		}else {
@@ -55,9 +57,13 @@ public class UsuarioResource {
 	@GET
 	@Path("/verificar")
 	public Response verificarUsuario(@QueryParam("XTOKEN")String token) {
-		boolean valida = dao.valida(token);
-		if(valida) {
-			return Response.ok().build();
+		String usuarioValido = dao.valida(token);
+		System.out.println("dmedeiros :: verificarUsuario - token : " + usuarioValido);
+		boolean validar = usuarioValido != null ? true : false;
+		JSONObject jsonObject = new JSONObject();
+		jsonObject.putOpt("authtoken", usuarioValido);
+		if(validar) {
+			return Response.ok(jsonObject.toString()).build();
 		}else {
 			return Response.status(Status.FORBIDDEN).build();
 		}

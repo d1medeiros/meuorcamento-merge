@@ -46,8 +46,8 @@ public class UsuarioDao {
 		
 		String generateHash = "";
 		Usuario usuarioReady = prepararUsuario(usuario);
-		Query query = em.createQuery("select u from Usuario u where u.nome = :param1 and u.senha = :param2");
-		query.setParameter("param1", usuarioReady.getNome());
+		Query query = em.createQuery("select u from Usuario u where u.login = :param1 and u.senha = :param2");
+		query.setParameter("param1", usuarioReady.getLogin());
 		query.setParameter("param2", usuarioReady.getSenha());
 		Usuario singleResult = (Usuario) query.getSingleResult();
 		singleResult.setUltimoAcesso(LocalDate.now());
@@ -60,24 +60,25 @@ public class UsuarioDao {
 		return generateHash;
 	}
 	
-	public boolean valida(String token) {
-		boolean isValid = false;
+	public String valida(String token) {
+		String newGenerateHash = "";
 		try {
 			DecodedJWT hashIsValid = TokenGenerator.ValidateHash(token);
-			Claim claim = hashIsValid.getClaim("nome");
-			String nome = claim.isNull() ? null : claim.asString();
+			Claim claim = hashIsValid.getClaim("login");
+			String login = claim.isNull() ? null : claim.asString();
 			String subject = hashIsValid.getSubject();
-			if(nome != null && subject != null) {
-				Query query = em.createQuery("select u from Usuario u where u.nome = :param1 and u.senha = :param2");
-				query.setParameter("param1", nome);
+			if(login != null && subject != null) {
+				Query query = em.createQuery("select u from Usuario u where u.login = :param1 and u.senha = :param2");
+				query.setParameter("param1", login);
 				query.setParameter("param2", subject);
+				
 				Usuario singleResult = (Usuario) query.getSingleResult();
-				isValid = singleResult.getNome() != null ? true : false;
+				newGenerateHash = TokenGenerator.generateHash(singleResult);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return isValid;
+		return newGenerateHash;
 	}
 	
 

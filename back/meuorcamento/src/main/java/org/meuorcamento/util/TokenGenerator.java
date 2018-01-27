@@ -26,7 +26,7 @@ public class TokenGenerator {
 	            return  random;
 	    }
 	    
-		public static String digester(String original) throws UnsupportedEncodingException, NoSuchAlgorithmException {
+		public static synchronized String digester(String original) throws UnsupportedEncodingException, NoSuchAlgorithmException {
 			MessageDigest algorithm = MessageDigest.getInstance("SHA-512");
 			byte messageDigest[] = algorithm.digest(original.getBytes("UTF-8"));
 			 
@@ -37,14 +37,14 @@ public class TokenGenerator {
 			return hexString.toString();
 		}
 		
-		public static String generateHash(Usuario usuario) {
+		public static synchronized String generateHash(Usuario usuario) {
 			String token = "";
 			long tokenTempoExpirar = 5;
 			Date data = Date.from(LocalDateTime.now().plusMinutes(tokenTempoExpirar).atZone(ZoneId.systemDefault()).toInstant());
 			try {
 			    Algorithm algorithm = Algorithm.HMAC256("SECRET");
 			    token = JWT.create()
-			        .withClaim("nome", usuario.getNome())
+			        .withClaim("login", usuario.getLogin())
 			        .withExpiresAt(data)
 			        .withSubject(usuario.getSenha())
 			        .sign(algorithm);
@@ -53,7 +53,7 @@ public class TokenGenerator {
 			return token;
 		}
 				
-		public static String DecodeHash(String word) {
+		public static synchronized String DecodeHash(String word) {
 			String payload ="";
 			try {
 			    DecodedJWT jwt = JWT.decode(word);
@@ -64,7 +64,7 @@ public class TokenGenerator {
 			return payload;
 		}
 		
-		public static DecodedJWT ValidateHash(String token) throws IllegalArgumentException, UnsupportedEncodingException {
+		public static synchronized DecodedJWT ValidateHash(String token) throws IllegalArgumentException, UnsupportedEncodingException {
 		    Algorithm algorithm = Algorithm.HMAC256("SECRET");
 		    JWTVerifier verifier = JWT.require(algorithm).build();
 		    DecodedJWT jwt = verifier.verify(token);

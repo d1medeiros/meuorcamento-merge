@@ -18,6 +18,7 @@ public class Usuario {
 	@GeneratedValue(strategy=GenerationType.IDENTITY, generator="EMP_SEQ")
 	private long id;
 	private String nome;
+	private String login;
 	private String senha;
 	private boolean estado;
 	private LocalDate ultimoAcesso;
@@ -52,6 +53,12 @@ public class Usuario {
 	}
 	public void setUltimoAcesso(LocalDate ultimoAcesso) {
 		this.ultimoAcesso = ultimoAcesso;
+	}
+	public String getLogin() {
+		return login;
+	}
+	public void setLogin(String login) {
+		this.login = login;
 	}
 	
 }
