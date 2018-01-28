@@ -6,6 +6,7 @@ import Home from './Home';
 import App from './App';
 import Login from './Login';
 import Logout from './Logout';
+import Classificar from './Classificar';
 import {Router,Route,browserHistory,IndexRoute} from 'react-router';
 import './index.css';
 
@@ -23,6 +24,7 @@ ReactDOM.render(
 	  	<Route path="/cadastro" component={Cadastro}/>
 	  	<Route path="/cadastro/:userId" component={Cadastro}/>
 	  	<Route path="/contas" component={Contas}/>
+	  	<Route path="/classificacao" component={Classificar}/>
   	</Route>
   	<Route path="/logout" component={Logout}/>
   </Router>),
