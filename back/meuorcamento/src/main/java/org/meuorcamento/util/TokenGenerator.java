@@ -39,7 +39,7 @@ public class TokenGenerator {
 		
 		public static synchronized String generateHash(Usuario usuario) {
 			String token = "";
-			long tokenTempoExpirar = 5;
+			long tokenTempoExpirar = 1;
 			Date data = Date.from(LocalDateTime.now().plusMinutes(tokenTempoExpirar).atZone(ZoneId.systemDefault()).toInstant());
 			try {
 			    Algorithm algorithm = Algorithm.HMAC256("SECRET");

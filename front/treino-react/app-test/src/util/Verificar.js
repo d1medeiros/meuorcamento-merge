@@ -16,8 +16,12 @@ export default class Verificar extends Component {
         })
         .then(jsonStringToken => {
             const token = JSON.parse(jsonStringToken).authtoken;
-            console.log('Verificar', token);
-            localStorage.setItem('auth-token', token);
+            if(token){
+                console.log('Verificar', token);
+                localStorage.setItem('auth-token', token);
+            }else{
+                localStorage.removeItem('auth-token');
+            }
         }).catch(error => {
             this.setState({
                 msg: error.message
