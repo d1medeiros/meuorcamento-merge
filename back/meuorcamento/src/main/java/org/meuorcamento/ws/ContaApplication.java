@@ -8,6 +8,7 @@ import javax.ws.rs.core.Application;
 
 import org.meuorcamento.util.ObjectMapperContextResolver;
 import org.meuorcamento.ws.resource.ContaResource;
+import org.meuorcamento.ws.resource.UsuarioResource;
 
 @ApplicationPath("api")
 public class ContaApplication extends Application{
@@ -21,6 +22,7 @@ public class ContaApplication extends Application{
 	    {
 	        final Set<Class<?>> classes = new HashSet<>();
 	        classes.add(ContaResource.class);
+	        classes.add(UsuarioResource.class);
 	        classes.add(ResponseFilter.class);
 	        classes.add(ObjectMapperContextResolver.class);
 	        

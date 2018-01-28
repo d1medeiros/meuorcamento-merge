@@ -2,6 +2,8 @@ import React,{Component} from 'react';
 import {Link} from 'react-router';
 import FaPlus from 'react-icons/lib/fa/plus';
 import TRContas from './componentes/TRContas';
+import Verificar from './util/Verificar';
+
 // import Popup from './componentes/Popup';
 import PubSub from 'pubsub-js';
 import $ from 'jquery';
@@ -29,6 +31,9 @@ class Contas extends Component{
 
     componentDidMount(){  
         console.log("didMount");
+
+        new Verificar().verifica();
+
         $.ajax({
             url:"http://localhost:8080/meuorcamento/api/conta/atual",
             dataType: 'json',

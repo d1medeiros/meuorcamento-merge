@@ -1,11 +1,14 @@
 import React,{Component} from 'react';
 import FormContas from './componentes/FormContas'
+import Verificar from './util/Verificar';
 
 
 class Cadastro extends Component{
 
     componentDidMount(){
         console.log(this.props);
+
+        new Verificar().verifica();
     }
 
     render(){
