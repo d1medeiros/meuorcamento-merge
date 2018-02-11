@@ -4,6 +4,7 @@ import javax.inject.Inject;
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.HeaderParam;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -16,6 +17,7 @@ import javax.ws.rs.core.Response.Status;
 import org.json.JSONObject;
 import org.meuorcamento.dao.UsuarioDao;
 import org.meuorcamento.model.Usuario;
+import org.meuorcamento.util.TokenGenerator;
 
 @Path("usuario")
 @Produces({MediaType.APPLICATION_JSON })
@@ -42,9 +44,6 @@ public class UsuarioResource {
 	public Response getUsuario(@Valid Usuario usuario) {
 		String usuarioValido = dao.loga(usuario);
 		boolean validar = usuarioValido != null ? true : false;
-		
-		System.out.println("dmedeiros :: getUsuario - token : " + usuarioValido);
-		
 		JSONObject jsonObject = new JSONObject();
 		jsonObject.putOpt("authtoken", usuarioValido);
 		if(validar) {
@@ -56,12 +55,12 @@ public class UsuarioResource {
 	
 	@GET
 	@Path("/verificar")
-	public Response verificarUsuario(@QueryParam("XTOKEN")String token) {
-		String usuarioValido = dao.valida(token);
-		System.out.println("dmedeiros :: verificarUsuario - token : " + usuarioValido);
-		boolean validar = usuarioValido != null ? true : false;
+	public Response verificarUsuario(@HeaderParam("XTOKEN")String token) {
+		Usuario usuarioValido = dao.valida(token);
+		String newGenerateHash = TokenGenerator.generateHash(usuarioValido);
+		boolean validar = newGenerateHash != null ? true : false;
 		JSONObject jsonObject = new JSONObject();
-		jsonObject.putOpt("authtoken", usuarioValido);
+		jsonObject.putOpt("authtoken", newGenerateHash);
 		if(validar) {
 			return Response.ok(jsonObject.toString()).build();
 		}else {

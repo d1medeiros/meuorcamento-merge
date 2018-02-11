@@ -1,12 +1,8 @@
 package org.meuorcamento.dao;
 
 import java.io.UnsupportedEncodingException;
-import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.Date;
 
 import javax.ejb.Stateful;
 import javax.persistence.EntityManager;
@@ -16,10 +12,6 @@ import javax.persistence.Query;
 import org.meuorcamento.model.Usuario;
 import org.meuorcamento.util.TokenGenerator;
 
-import com.auth0.jwt.JWT;
-import com.auth0.jwt.JWTVerifier;
-import com.auth0.jwt.algorithms.Algorithm;
-import com.auth0.jwt.exceptions.JWTDecodeException;
 import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
@@ -60,8 +52,8 @@ public class UsuarioDao {
 		return generateHash;
 	}
 	
-	public String valida(String token) {
-		String newGenerateHash = "";
+	public Usuario valida(String token) {
+		Usuario singleResult = null;
 		try {
 			DecodedJWT hashIsValid = TokenGenerator.ValidateHash(token);
 			Claim claim = hashIsValid.getClaim("login");
@@ -72,13 +64,12 @@ public class UsuarioDao {
 				query.setParameter("param1", login);
 				query.setParameter("param2", subject);
 				
-				Usuario singleResult = (Usuario) query.getSingleResult();
-				newGenerateHash = TokenGenerator.generateHash(singleResult);
+				singleResult = (Usuario) query.getSingleResult();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return newGenerateHash;
+		return singleResult;
 	}
 	
 
