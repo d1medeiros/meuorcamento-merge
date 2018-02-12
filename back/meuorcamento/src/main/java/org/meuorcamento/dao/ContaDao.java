@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import javax.ejb.Stateful;
 import javax.persistence.EntityManager;
@@ -12,6 +13,7 @@ import javax.persistence.Query;
 
 import org.meuorcamento.model.Conta;
 import org.meuorcamento.model.TipoConta;
+import org.meuorcamento.model.Usuario;
 import org.meuorcamento.util.TokenGenerator;
 
 @Stateful
@@ -30,6 +32,7 @@ public class ContaDao {
 		contaFutura.setRepetir(conta.isRepetir());
 		contaFutura.setTipoConta(conta.getTipoConta());
 		contaFutura.setChaveGrupoContas(conta.getChaveGrupoContas());
+		contaFutura.setUsuario(conta.getUsuario());
 		return contaFutura;
 	}
 	
@@ -41,6 +44,7 @@ public class ContaDao {
 		conta.setEstado(alteracao.isEstado());
 		conta.setRepetir(alteracao.isRepetir());
 		conta.setTipoConta(alteracao.getTipoConta());
+		conta.setUsuario(alteracao.getUsuario());
 		return conta;
 	}
 	
@@ -82,10 +86,16 @@ public class ContaDao {
 	}
 	
 	public Conta getContaById(int id) {
-		Conta conta = null;
-		Query q = em.createQuery("select c from Conta c where c.id = :param1");
-		q.setParameter("param1", id);
-		conta = (Conta) q.getSingleResult();
+		Conta conta = new Conta();
+		try {
+			Query q = em.createQuery("select c from Conta c where c.id = :param1");
+			q.setParameter("param1", id);
+			conta = (Conta) q.getSingleResult();
+			System.out.println("\n getContaById: " + conta.getId() + "\n");
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 		return conta;
 	}
 	
@@ -93,10 +103,11 @@ public class ContaDao {
 	 * O limite e de 6 meses
 	 * @return lista de contas
 	 */
-	public List<Conta> listaTodos() {
+	public List<Conta> listaTodos(Usuario usuario) {
 		List<Conta> contas = null;
-		Query q = em.createQuery("select c from Conta c where c.dataPagamento < :param1");
+		Query q = em.createQuery("select c from Conta c where c.dataPagamento < :param1 and c.usuario = :param2");
 		q.setParameter("param1", dataParaSeisMeses());
+		q.setParameter("param2", usuario);
 		contas = q.getResultList();
 		return contas;
 	}
@@ -114,9 +125,9 @@ public class ContaDao {
 		return contas;
 	}
 	
-	public List<Conta> listaMesAtual() {
+	public List<Conta> listaMesAtual(Usuario usuario) {
 		
-		List<Conta> todos = listaTodos();
+		List<Conta> todos = listaTodos(usuario);
 		return todos.stream()
 					.filter(conta -> conta.getDataPagamento().getMonth() == LocalDate.now().getMonth())
 					.collect(Collectors.toList());
@@ -124,9 +135,9 @@ public class ContaDao {
 		
 	}
 	
-	public List<Conta> listaMesPorNumero(int mes, int ano) {
+	public List<Conta> listaMesPorNumero(int mes, int ano, Usuario usuario) {
 		
-		List<Conta> todos = listaTodos();
+		List<Conta> todos = listaTodos(usuario);
 		return todos.stream()
 				.filter(conta -> conta.getDataPagamento().getMonth() == LocalDate.now().withMonth(mes).getMonth())
 				.filter(conta -> conta.getDataPagamento().getYear() == LocalDate.now().withYear(ano).getYear())
@@ -146,6 +157,18 @@ public class ContaDao {
 		q.setParameter("param2", c.getDataPagamento());
 		return q.getResultList();
 	}
+
+	public Conta getContaPorNomeEData(String nome, String data, Usuario usuario) {
+		Query q = em.createQuery("select c from Conta c where c.dataPagamento = :param1 and c.usuario = :param2 and c.nome = :param3");
+		q.setParameter("param1", dataParaSeisMeses());
+		q.setParameter("param2", usuario);
+		q.setParameter("param3", nome);
+		Conta conta = (Conta) q.getSingleResult();
+		return conta;
+		
+	}
+	
+
 
 	
 }

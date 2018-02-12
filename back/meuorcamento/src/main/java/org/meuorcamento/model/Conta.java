@@ -8,6 +8,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
@@ -24,6 +25,8 @@ public class Conta {
 	@Enumerated(EnumType.STRING)
 	private TipoConta tipoConta;
 	private String chaveGrupoContas;
+	@ManyToOne
+	private Usuario usuario;
 	
 	
 	public int getId() {
@@ -74,7 +77,16 @@ public class Conta {
 	public void setChaveGrupoContas(String chaveGrupoContas) {
 		this.chaveGrupoContas = chaveGrupoContas;
 	}
+	public Usuario getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
 	
-	
+	@Override
+	public String toString() {
+		return String.format("ID: %d - Nome: %s ", this.id, this.nome);
+	}
 	
 }

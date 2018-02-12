@@ -1,11 +1,16 @@
 package org.meuorcamento.model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -22,6 +27,8 @@ public class Usuario {
 	private String senha;
 	private boolean estado;
 	private LocalDate ultimoAcesso;
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	private List<Conta> contas = new ArrayList<>();
 	
 	
 	public long getId() {
@@ -60,5 +67,15 @@ public class Usuario {
 	public void setLogin(String login) {
 		this.login = login;
 	}
+	public List<Conta> getContas() {
+		return contas;
+	}
+	public void setContas(List<Conta> contas) {
+		this.contas = contas;
+	}
 	
+	@Override
+	public String toString() {
+		return String.format("ID: %d - Nome: %s ", this.id, this.nome);
+	}
 }

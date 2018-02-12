@@ -1,12 +1,14 @@
 package org.meuorcamento.ws.resource;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
-import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.HeaderParam;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -16,9 +18,9 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
 import org.meuorcamento.dao.ContaDao;
+import org.meuorcamento.dao.UsuarioDao;
 import org.meuorcamento.model.Conta;
-import org.meuorcamento.model.TipoConta;
-import org.meuorcamento.util.TokenGenerator;
+import org.meuorcamento.model.Usuario;
 
 @Path("conta")
 @Produces({MediaType.APPLICATION_JSON })
@@ -27,12 +29,15 @@ public class ContaResource {
 	
 	@Inject
 	private ContaDao dao;
-
+	@Inject
+	private UsuarioDao usuarioDao;
+	private static Status STATUS_CODE;
 
 	@GET
-	@Path("/atual")
-	public List<Conta> getContasAtual() {
-		return dao.listaMesAtual();
+	@Path("/atual") 
+	public List<Conta> getContasAtual(@HeaderParam("XTOKEN")String token) {
+		Usuario validaUsuario = validaUsuario(token);
+		return preparaLista(dao.listaMesAtual(validaUsuario));
 	}
 
 	@GET
@@ -41,62 +46,85 @@ public class ContaResource {
 		return dao.getContaById(id);
 	}
 
+	
 	@POST
 	@Path("/remove/{id}")
-	public Response removeConta(@PathParam("id") int id) {
-		dao.remove(id);
-		return Response.noContent().build();
+	public Response removeConta(@PathParam("id") int id, @HeaderParam("XTOKEN")String token) {
+		STATUS_CODE = Status.FORBIDDEN;
+		Optional.of(validaUsuario(token))
+				.ifPresent(u -> {
+					dao.remove(id);
+					STATUS_CODE = Status.ACCEPTED;
+				});
+		return  Response.status(STATUS_CODE).build();
 	}
 	
 	@POST
 	@Path("/remove/todos/{id}")
-	public Response removeAllConta(@PathParam("id") int id) {
-		dao.removeAll(id);
-		return Response.noContent().build();
+	public Response removeAllConta(@PathParam("id") int id, @HeaderParam("XTOKEN")String token) {
+		STATUS_CODE = Status.FORBIDDEN;
+		Optional.of(validaUsuario(token))
+				.ifPresent(u -> {
+					dao.removeAll(id);
+					STATUS_CODE = Status.ACCEPTED;
+				});
+		return  Response.status(STATUS_CODE).build();
 	}
 	
 	@GET
 	@Path("/mesano/{mesAno}")
-	public List<Conta> getContasPorNumero(@PathParam("mesAno") String mesAno) {
+	public List<Conta> getContasPorNumero(@PathParam("mesAno") String mesAno, @HeaderParam("XTOKEN")String token) {
 		int mes = Integer.valueOf(mesAno.split("-")[0]);
 		int ano = Integer.valueOf(mesAno.split("-")[1]);
-		return dao.listaMesPorNumero(mes, ano);
+		Usuario validaUsuario = validaUsuario(token);
+		return preparaLista(dao.listaMesPorNumero(mes, ano, validaUsuario));
 	}
 	
 	@GET
 	@Path("/seisMeses")
-	public List<Conta> getContasAll() {
-		return dao.listaTodos();
+	public List<Conta> getContasAll(@HeaderParam("XTOKEN")String token) {
+		Usuario validaUsuario = validaUsuario(token);
+		return preparaLista(dao.listaTodos(validaUsuario));
 	}
 	
 	@POST
 	@Path("/salva")
-	@Produces({MediaType.APPLICATION_JSON })
-	@Consumes({MediaType.APPLICATION_JSON })
-	public Response salva(@Valid Conta conta) {
-		
-		dao.inserir(conta);
-		
+	public Response salva(@Valid Conta conta, @HeaderParam("XTOKEN")String token) {
+		dao.inserir(inserirUsuario(conta, token));
 		return Response.noContent().build();
 	}
 	
 	@POST
 	@Path("/altera")
-	@Produces({MediaType.APPLICATION_JSON })
-	@Consumes({MediaType.APPLICATION_JSON })
-	public Response altera(@Valid Conta conta) {
-		dao.alterar(conta);
+	public Response altera(@Valid Conta conta, @HeaderParam("XTOKEN")String token) {
+		dao.alterar(inserirUsuario(conta, token));
 		return Response.noContent().build();
 	}
 	
 	@POST
 	@Path("/altera/todos")
-	@Produces({MediaType.APPLICATION_JSON })
-	@Consumes({MediaType.APPLICATION_JSON })
-	public Response alteraTodos(@Valid Conta conta) {
-		dao.alterarAll(conta);
+	public Response alteraTodos(@Valid Conta conta, @HeaderParam("XTOKEN")String token) {
+		dao.alterarAll(inserirUsuario(conta, token));
 		return Response.noContent().build();
 	}
 
-
+	private Conta inserirUsuario(Conta conta, String token) {
+		Usuario usuarioValido = usuarioDao.valida(token);
+		conta.setUsuario(usuarioValido);
+		return conta;
+	}
+	
+	private Usuario validaUsuario(String token) {
+		Usuario usuarioValido = usuarioDao.valida(token);
+		return usuarioValido;
+	}
+	
+	private Conta removeUsuarioDaConta(Conta conta) {
+		conta.setUsuario(new Usuario());
+		return conta;
+	}
+	
+	private List<Conta> preparaLista(List<Conta> lista){
+		return lista.stream().map(conta -> removeUsuarioDaConta(conta)).collect(Collectors.toList());
+	}
 }
