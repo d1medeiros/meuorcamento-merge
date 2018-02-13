@@ -53,7 +53,7 @@ public class ContasPorUsuarios {
 		// idConta = 2;
 		Client newClient = ClientBuilder.newClient();
 		WebTarget target = newClient.target("http://127.0.0.1:8080");
-		String response = target.path("/meuorcamento/api/conta/" + idConta).request().get(String.class);
+		String response = target.path("/meuorcamento/api/conta/" + idConta).request().header("XTOKEN", primeiraToken).get(String.class);
 		String nome = null;
 		try {
 			JSONObject jsonObject = new JSONObject(response);
@@ -221,7 +221,7 @@ public class ContasPorUsuarios {
 		idConta = 14;
 		Client newClient1 = ClientBuilder.newClient();
 		WebTarget target1 = newClient1.target("http://127.0.0.1:8080");
-		String response1 = target1.path("/meuorcamento/api/conta/" + idConta).request().get(String.class);
+		String response1 = target1.path("/meuorcamento/api/conta/" + idConta).request().header("XTOKEN", primeiraToken).get(String.class);
 
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.registerModule(new JSR310Module());
@@ -296,7 +296,7 @@ public class ContasPorUsuarios {
 		
 			Client newClient2 = ClientBuilder.newClient();
 			WebTarget target2 = newClient2.target("http://127.0.0.1:8080/meuorcamento/api/conta/all?ids=" + collect);
-			String nomeByIds = target2.request().get(String.class);
+			String nomeByIds = target2.request().header("XTOKEN", primeiraToken).get(String.class);
 			
 		
 			ObjectMapper objectMapper = new ObjectMapper();

@@ -37,9 +37,6 @@ public class ContaResource {
 	private UsuarioDao usuarioDao;
 	private static Status STATUS_CODE;
 
-	private void getContasGenerico(int[] array){
-		
-	}
 	
 	@GET
 	@Path("/atual") 
@@ -50,15 +47,19 @@ public class ContaResource {
 
 	@GET
 	@Path("{id}")
-	public Conta getConta(@PathParam("id") int id) {
-		return dao.getContaById(id);
+	public Conta getConta(@PathParam("id") int id, @HeaderParam("XTOKEN")String token) {
+		if(validaUsuario(token).getNome() != null) {
+			return dao.getContaById(id);
+		}else {
+			return new Conta();
+		}
 	}
 	
 	@GET
 	@Path("/all")
-	public List<Conta> getContas(@QueryParam("ids") String ids) {
+	public List<Conta> getContas(@QueryParam("ids") String ids, @HeaderParam("XTOKEN")String token) {
 			Optional<String> o = Optional.of(ids);
-			if(o.isPresent()) {
+			if(o.isPresent() && validaUsuario(token).getNome() != null) {
 				String[] split = ids.split("-");
 				List<Integer> collect = Stream.of(split).map(s -> Integer.valueOf(s)).collect(Collectors.toList());
 				System.out.println(collect);
@@ -68,7 +69,6 @@ public class ContaResource {
 			}
 	}
 
-	
 	@POST
 	@Path("/remove/{id}")
 	public Response removeConta(@PathParam("id") int id, @HeaderParam("XTOKEN")String token) {
