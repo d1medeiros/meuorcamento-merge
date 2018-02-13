@@ -10,8 +10,8 @@ import $ from 'jquery';
 
 class Contas extends Component{
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             listaGastos: [], 
             listaGanho: [], 
@@ -34,13 +34,26 @@ class Contas extends Component{
 
         new Verificar().verifica();
 
-        $.ajax({
-            url:"http://localhost:8080/meuorcamento/api/conta/atual",
-            dataType: 'json',
-            success:function(resp){    
+        const url = 'http://localhost:8080/meuorcamento/api/conta/atual';
+        const req = {
+            method: 'GET',
+            headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
+        }
+        fetch(url, req)
+            .then(res => {
+                if(res.ok){
+                    return  res.json();
+                }else{
+                    throw new Error('não foi possível fazer o login');
+                }
+            }).then(resp => {
                 this.setState(this.sucessoAjax(resp));
-            }.bind(this)
-        });
+            }).catch(error => {
+                this.setState({
+                    msg: error.message
+                });
+            });
+
 
         PubSub.subscribe('atualiza.gastos',function(topico,index){
             var newList = this.state.listaGastos.filter(x => x.id !== index);
@@ -148,55 +161,69 @@ class Contas extends Component{
         console.log("depois de mudar -> next mes - ano " + mes + ' - ' + ano);
         if(isOk){
             var paramDate = mes + '-' + ano
-            $.ajax({
-                url:"http://localhost:8080/meuorcamento/api/conta/mesano/" + paramDate,
-                dataType: 'json',
-                success:function(resp){    
-                    if(resp.length > 0){
-                        this.setState(this.sucessoAjax(resp));
+           
+            const url = "http://localhost:8080/meuorcamento/api/conta/mesano/" + paramDate;
+            const req = {
+                method: 'GET',
+                headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
+            }
+            fetch(url, req)
+                .then(res => {
+                    if(res.ok){
+                        return  res.json();
+                    }else{
+                        throw new Error('não foi possível fazer o login');
                     }
-                }.bind(this),
-                  error:function(resp){
-                        console.log(resp);
-                  }
-              } 
-            );
-        }
-    }
-
-    getPrevContasPorMes(event){
-        event.preventDefault();  
-        var isOk = false;
-        var mes = this.state.mesValor;
-        var ano = this.state.anoValor;
-        
-        mes--;
-        if(mes >= 1 && mes <= 12){
-            isOk = true;
-        }else if (mes < 1){
-            ano--;
-            mes = 12;
-            isOk = true;
-        }else{
-            isOk = false;
+                }).then(resp => {
+                    this.setState(this.sucessoAjax(resp));
+                }).catch(error => {
+                    this.setState({
+                        msg: error.message
+                    });
+                });
+                
+            }
         }
         
-        console.log("next mes - ano " + mes + ' - ' + ano);
-        if(isOk){
-            var paramDate = mes + '-' + ano
-            $.ajax({
-                url:"http://localhost:8080/meuorcamento/api/conta/mesano/" + paramDate,
-                dataType: 'json',
-                success:function(resp){    
-                    if(resp.length > 0){
+        getPrevContasPorMes(event){
+            event.preventDefault();  
+            var isOk = false;
+            var mes = this.state.mesValor;
+            var ano = this.state.anoValor;
+            
+            mes--;
+            if(mes >= 1 && mes <= 12){
+                isOk = true;
+            }else if (mes < 1){
+                ano--;
+                mes = 12;
+                isOk = true;
+            }else{
+                isOk = false;
+            }
+            
+            console.log("next mes - ano " + mes + ' - ' + ano);
+            if(isOk){
+                var paramDate = mes + '-' + ano
+                const url = "http://localhost:8080/meuorcamento/api/conta/mesano/" + paramDate;
+                const req = {
+                    method: 'GET',
+                    headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
+                }
+                fetch(url, req)
+                    .then(res => {
+                        if(res.ok){
+                            return  res.json();
+                        }else{
+                            throw new Error('não foi possível fazer o login');
+                        }
+                    }).then(resp => {
                         this.setState(this.sucessoAjax(resp));
-                    }
-                }.bind(this),
-                  error:function(resp){
-                        console.log(resp);
-                  }
-              } 
-            );
+                    }).catch(error => {
+                        this.setState({
+                            msg: error.message
+                        });
+                    });
         }
     }
 
@@ -268,7 +295,6 @@ class Contas extends Component{
             <div className={ positivoOuNegativo + " is-center" } id="total">Saldo: R$ {total} </div>
 
             <div className="content is-center">
-            
                 {/* botao prev next */}
                 <div className="pure-g">
                     <div className="pure-u-1-3" id="prev-contas">
