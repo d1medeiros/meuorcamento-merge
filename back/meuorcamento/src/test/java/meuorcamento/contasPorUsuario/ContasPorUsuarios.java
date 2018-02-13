@@ -3,8 +3,11 @@ package meuorcamento.contasPorUsuario;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
@@ -19,6 +22,7 @@ import org.junit.runners.MethodSorters;
 import org.meuorcamento.model.Conta;
 
 import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JSR310Module;
@@ -32,9 +36,17 @@ public class ContasPorUsuarios {
 	private static int idContaRepetir;
 	private static String mesAnterior;
 	private static String mesAtual;
+	private static String collect;
+	private static List<Conta> contas;
+	private static int contasSize;
 
 	private void imp(String local, Object obj) {
 		System.out.println("dmedeiros :: TESTE : " + local + " : " + obj + "\n");
+	}
+
+	private Conta changeNome(String nome, Conta conta) {
+		conta.setNome(nome);
+		return conta;
 	}
 
 	private String getNomeById(int idConta) throws JsonParseException, JsonMappingException, IOException {
@@ -49,6 +61,14 @@ public class ContasPorUsuarios {
 		} catch (Exception e) {}
 		imp("******** getById: ", nome);
 		return nome;
+	}
+	
+	private String getNomeByIds(String ids) throws JsonParseException, JsonMappingException, IOException {
+		Client newClient2 = ClientBuilder.newClient();
+		WebTarget target2 = newClient2.target("http://127.0.0.1:8080");
+		String response1 = target2.path("/meuorcamento/api/conta/all").queryParam("ids", ids).request().get(String.class);
+		
+		return response1;
 	}
 
 	@Test
@@ -228,44 +248,68 @@ public class ContasPorUsuarios {
 	}
 
 
-//	@Test
-//	public void iAlteraConta() throws JsonParseException, JsonMappingException, IOException {
-//		String nome = "cartão de credito";
-//		String data = "2018-02-20";
-//		//iserindo contas
-//		JSONObject jsonObject = new JSONObject();
-//		jsonObject.putOpt("nome", "cartão de credito");
-//		jsonObject.putOpt("valor", 2110);
-//		jsonObject.putOpt("dataPagamento", data);
-//		jsonObject.putOpt("estado", false);
-//		jsonObject.putOpt("repetir", true);
-//		jsonObject.putOpt("tipoConta", "GASTOS");
-//		Client newClient = ClientBuilder.newClient();
-//		WebTarget target = newClient.target("http://127.0.0.1:8080");
-//		Response response = target.path("/meuorcamento/api/conta/salva").request().header("XTOKEN", primeiraToken).post(Entity.json(jsonObject.toString()));
-//		imp("iAlteraConta: ", response);
-//		
-//		//pegando id
-//		idConta = 14;
-//		
-//		//alterando
-//		String nomeAlterado = "carro";
-//		jsonObject = new JSONObject();
-//		jsonObject.putOpt("id", idConta);
-//		jsonObject.putOpt("nome", nomeAlterado);
-//		jsonObject.putOpt("valor", 2110);
-//		jsonObject.putOpt("dataPagamento", data);
-//		jsonObject.putOpt("estado", false);
-//		jsonObject.putOpt("repetir", true);
-//		jsonObject.putOpt("tipoConta", "GASTOS");
-//		newClient = ClientBuilder.newClient();
-//		target = newClient.target("http://127.0.0.1:8080");
-//		response = target.path("/meuorcamento/api/conta/altera").request().header("XTOKEN", primeiraToken).post(Entity.json(jsonObject.toString()));
-//		
-//		String nomeNovo = getNomeById(idConta);
-//		
-//		imp("iAlteraConta: ", idConta + " - " + nome + " :: " + nomeNovo + "  " + nomeAlterado.equalsIgnoreCase(nomeNovo));
-//		Assert.assertTrue(nomeAlterado.equalsIgnoreCase(nomeNovo));
-//	}
+	@Test
+	@SuppressWarnings("unchecked")
+	public void kAlteraALLConta() throws JsonParseException, JsonMappingException, IOException {
+//		idConta = 15;
+		Client newClient1 = ClientBuilder.newClient();
+		WebTarget target1 = newClient1.target("http://127.0.0.1:8080");
+		String response1 = target1.path("/meuorcamento/api/conta/seisMeses").request().header("XTOKEN", primeiraToken).get(String.class);
+
+		String nomeAterado = "itau";
+		ObjectMapper objectMapper = new ObjectMapper();
+		objectMapper.registerModule(new JSR310Module());
+		objectMapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd"));
+		contas = objectMapper.readValue(response1, new TypeReference<List<Conta>>() {});
+		contasSize = contas.stream().filter(c -> c.getNome().equalsIgnoreCase("seguro")).collect(Collectors.toList()).size();
+
+		collect = contas.stream()
+				.filter(c -> c.getNome().equalsIgnoreCase("seguro"))
+				.map(c -> "" + c.getId())
+				.collect(Collectors.joining( "-" ));
+		
+		Conta conta = contas.stream()
+				 			.filter(c -> Optional.of(c).isPresent())
+				 			.filter(c -> c.getNome().equalsIgnoreCase("seguro"))
+				 			.filter(c -> c.getId() == 15)
+				 			.map(c -> changeNome(nomeAterado, c))
+							.collect(Collectors.toList()).get(0);
+		
+		objectMapper = new ObjectMapper();
+		objectMapper.registerModule(new JSR310Module());
+		objectMapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd"));
+		String contaJson = objectMapper.writeValueAsString(conta);
+		
+		Client newClient = ClientBuilder.newClient();
+		WebTarget target = newClient.target("http://127.0.0.1:8080");
+		Response response = target.path("/meuorcamento/api/conta/altera/todos").request().header("XTOKEN", primeiraToken).post(Entity.json(contaJson));
+		String responseString = response.readEntity(String.class);
+		response.close();
+		
+		imp("kAlteraALLConta: ", contaJson);
+		
+		Assert.assertNotNull(responseString);
+	}
+	
+	@Test
+	public void lCheckAlteraConta() throws JsonParseException, JsonMappingException, IOException{
+		
+			Client newClient2 = ClientBuilder.newClient();
+			WebTarget target2 = newClient2.target("http://127.0.0.1:8080/meuorcamento/api/conta/all?ids=" + collect);
+			String nomeByIds = target2.request().get(String.class);
+			
+		
+			ObjectMapper objectMapper = new ObjectMapper();
+			objectMapper.registerModule(new JSR310Module());
+			objectMapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd"));
+			List<Conta> contasNova = objectMapper.readValue(nomeByIds, new TypeReference<List<Conta>>() {});
+			
+     		int size = contasNova.size();
+     		
+     		imp("lCheckAlteraConta: ", "size novo: " + size + " antigo: " + contasSize);
+     		
+			Assert.assertTrue(size == contasSize);
+
+	}
 
 }

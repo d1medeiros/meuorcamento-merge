@@ -1,8 +1,11 @@
 package org.meuorcamento.ws.resource;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 import javax.inject.Inject;
 import javax.validation.Valid;
@@ -13,6 +16,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
@@ -33,6 +37,10 @@ public class ContaResource {
 	private UsuarioDao usuarioDao;
 	private static Status STATUS_CODE;
 
+	private void getContasGenerico(int[] array){
+		
+	}
+	
 	@GET
 	@Path("/atual") 
 	public List<Conta> getContasAtual(@HeaderParam("XTOKEN")String token) {
@@ -44,6 +52,20 @@ public class ContaResource {
 	@Path("{id}")
 	public Conta getConta(@PathParam("id") int id) {
 		return dao.getContaById(id);
+	}
+	
+	@GET
+	@Path("/all")
+	public List<Conta> getContas(@QueryParam("ids") String ids) {
+			Optional<String> o = Optional.of(ids);
+			if(o.isPresent()) {
+				String[] split = ids.split("-");
+				List<Integer> collect = Stream.of(split).map(s -> Integer.valueOf(s)).collect(Collectors.toList());
+				System.out.println(collect);
+				return dao.getContaByIds( collect );
+			}else {
+				return Arrays.asList(new Conta());
+			}
 	}
 
 	

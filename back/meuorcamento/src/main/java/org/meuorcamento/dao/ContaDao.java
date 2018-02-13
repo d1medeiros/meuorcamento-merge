@@ -167,6 +167,12 @@ public class ContaDao {
 		return conta;
 		
 	}
+
+	public List<Conta> getContaByIds(List<Integer> collect) {
+		Query q = em.createQuery("select c from Conta c where c.id in :param1");
+		q.setParameter("param1", collect);
+		return q.getResultList();
+	}
 	
 
 
