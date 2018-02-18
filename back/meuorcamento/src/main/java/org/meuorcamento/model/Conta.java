@@ -2,19 +2,19 @@ package org.meuorcamento.model;
 
 import java.time.LocalDate;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
 @XmlRootElement(name="conta")
 public class Conta {
-
+	
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private String nome;
@@ -24,11 +24,10 @@ public class Conta {
 	private boolean repetir;
 	@Enumerated(EnumType.STRING)
 	private TipoConta tipoConta;
-	private String chaveGrupoContas;
-	@ManyToOne
-	private Usuario usuario;
+	private String chaveGrupoContas; 
 	
-	
+
+
 	public int getId() {
 		return id;
 	}
@@ -71,31 +70,27 @@ public class Conta {
 	public void setTipoConta(TipoConta tipoConta) {
 		this.tipoConta = tipoConta;
 	}
-	public String getChaveGrupoContas() {
-		return chaveGrupoContas;
-	}
-	public void setChaveGrupoContas(String chaveGrupoContas) {
-		this.chaveGrupoContas = chaveGrupoContas;
-	}
-	public Usuario getUsuario() {
-		return usuario;
-	}
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
-	}
+	public String getChaveGrupoContas() { 
+        return chaveGrupoContas; 
+    } 
+    public void setChaveGrupoContas(String chaveGrupoContas) { 
+        this.chaveGrupoContas = chaveGrupoContas; 
+    } 
 	
 	@Override
 	public String toString() {
-		return String.format("ID: %d - Nome: %s ", this.id, this.nome);
+		// TODO Auto-generated method stub
+		return String.format("ID: %d Nome: %s", this.id, this.nome);
 	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((chaveGrupoContas == null) ? 0 : chaveGrupoContas.hashCode());
+		result = prime * result + ((dataPagamento == null) ? 0 : dataPagamento.hashCode());
 		result = prime * result + (estado ? 1231 : 1237);
 		result = prime * result + id;
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		result = prime * result + (repetir ? 1231 : 1237);
 		result = prime * result + ((tipoConta == null) ? 0 : tipoConta.hashCode());
 		result = prime * result + ((valor == null) ? 0 : valor.hashCode());
 		return result;
@@ -109,10 +104,10 @@ public class Conta {
 		if (getClass() != obj.getClass())
 			return false;
 		Conta other = (Conta) obj;
-		if (chaveGrupoContas == null) {
-			if (other.chaveGrupoContas != null)
+		if (dataPagamento == null) {
+			if (other.dataPagamento != null)
 				return false;
-		} else if (!chaveGrupoContas.equals(other.chaveGrupoContas))
+		} else if (!dataPagamento.equals(other.dataPagamento))
 			return false;
 		if (estado != other.estado)
 			return false;
@@ -122,6 +117,8 @@ public class Conta {
 			if (other.nome != null)
 				return false;
 		} else if (!nome.equals(other.nome))
+			return false;
+		if (repetir != other.repetir)
 			return false;
 		if (tipoConta != other.tipoConta)
 			return false;

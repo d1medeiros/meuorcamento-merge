@@ -35,24 +35,20 @@ public class ContaResource {
 	private ContaDao dao;
 	@Inject
 	private UsuarioDao usuarioDao;
-	private static Status STATUS_CODE;
 
 	
 	@GET
 	@Path("/atual") 
 	public List<Conta> getContasAtual(@HeaderParam("XTOKEN")String token) {
 		Usuario validaUsuario = validaUsuario(token);
-		return preparaLista(dao.listaMesAtual(validaUsuario));
+		return dao.listaMesAtual(validaUsuario);
 	}
 
 	@GET
 	@Path("{id}")
 	public Conta getConta(@PathParam("id") int id, @HeaderParam("XTOKEN")String token) {
-		if(validaUsuario(token).getNome() != null) {
-			return dao.getContaById(id);
-		}else {
-			return new Conta();
-		}
+		Usuario validaUsuario = validaUsuario(token);
+		return dao.getContaById(id, validaUsuario);
 	}
 	
 	@GET
@@ -72,25 +68,26 @@ public class ContaResource {
 	@POST
 	@Path("/remove/{id}")
 	public Response removeConta(@PathParam("id") int id, @HeaderParam("XTOKEN")String token) {
-		STATUS_CODE = Status.FORBIDDEN;
-		Optional.of(validaUsuario(token))
-				.ifPresent(u -> {
-					dao.remove(id);
-					STATUS_CODE = Status.ACCEPTED;
-				});
-		return  Response.status(STATUS_CODE).build();
+		Usuario validaUsuario = validaUsuario(token);
+		boolean remove = dao.remove(id, validaUsuario);
+		if(remove) {
+			return Response.ok().build();
+		}else {
+			return Response.notModified().build();
+		}
 	}
 	
 	@POST
 	@Path("/remove/todos/{id}")
 	public Response removeAllConta(@PathParam("id") int id, @HeaderParam("XTOKEN")String token) {
-		STATUS_CODE = Status.FORBIDDEN;
-		Optional.of(validaUsuario(token))
-				.ifPresent(u -> {
-					dao.removeAll(id);
-					STATUS_CODE = Status.ACCEPTED;
-				});
-		return  Response.status(STATUS_CODE).build();
+		Usuario validaUsuario = validaUsuario(token);
+		boolean remove = true;
+				dao.removeAll(id, validaUsuario);
+		if(remove) {
+			return Response.ok().build();
+		}else {
+			return Response.notModified().build();
+		}
 	}
 	
 	@GET
@@ -99,54 +96,43 @@ public class ContaResource {
 		int mes = Integer.valueOf(mesAno.split("-")[0]);
 		int ano = Integer.valueOf(mesAno.split("-")[1]);
 		Usuario validaUsuario = validaUsuario(token);
-		return preparaLista(dao.listaMesPorNumero(mes, ano, validaUsuario));
+		return dao.listaMesPorNumero(mes, ano, validaUsuario);
 	}
 	
 	@GET
 	@Path("/seisMeses")
 	public List<Conta> getContasAll(@HeaderParam("XTOKEN")String token) {
 		Usuario validaUsuario = validaUsuario(token);
-		return preparaLista(dao.listaTodos(validaUsuario));
+		return dao.listaTodos(validaUsuario);
 	}
 	
 	@POST
 	@Path("/salva")
 	public Response salva(@Valid Conta conta, @HeaderParam("XTOKEN")String token) {
-		dao.inserir(inserirUsuario(conta, token));
+		Usuario validaUsuario = validaUsuario(token);
+		dao.inserir(conta, validaUsuario);
 		return Response.noContent().build();
 	}
 	
 	@POST
 	@Path("/altera")
 	public Response altera(@Valid Conta conta, @HeaderParam("XTOKEN")String token) {
-		dao.alterar(inserirUsuario(conta, token));
+		Usuario validaUsuario = validaUsuario(token);
+		dao.alterar(conta, validaUsuario);
 		return Response.noContent().build();
 	}
 	
 	@POST
 	@Path("/altera/todos")
 	public Response alteraTodos(@Valid Conta conta, @HeaderParam("XTOKEN")String token) {
-		dao.alterarAll(inserirUsuario(conta, token));
+		Usuario validaUsuario = validaUsuario(token);
+		dao.alterarAll(conta, validaUsuario);
 		return Response.noContent().build();
 	}
 
-	private Conta inserirUsuario(Conta conta, String token) {
-		Usuario usuarioValido = usuarioDao.valida(token);
-		conta.setUsuario(usuarioValido);
-		return conta;
-	}
 	
 	private Usuario validaUsuario(String token) {
 		Usuario usuarioValido = usuarioDao.valida(token);
 		return usuarioValido;
-	}
-	
-	private Conta removeUsuarioDaConta(Conta conta) {
-		conta.setUsuario(new Usuario());
-		return conta;
-	}
-	
-	private List<Conta> preparaLista(List<Conta> lista){
-		return lista.stream().map(conta -> removeUsuarioDaConta(conta)).collect(Collectors.toList());
 	}
 }

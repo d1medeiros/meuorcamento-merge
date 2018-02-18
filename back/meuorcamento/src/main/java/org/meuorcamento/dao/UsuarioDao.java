@@ -9,6 +9,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import org.meuorcamento.model.Carteira;
 import org.meuorcamento.model.Usuario;
 import org.meuorcamento.util.TokenGenerator;
 
@@ -22,16 +23,13 @@ public class UsuarioDao {
 	private EntityManager em;
 
 	public boolean inserir(Usuario usuario) {
-		boolean isOk = false;
 		try {
 			Usuario usuarioReady = prepararUsuario(usuario);
-			usuarioReady.setEstado(true);
 			em.persist(usuarioReady);
-			isOk = true;
+			return true;
 		} catch (Exception e) {
-			isOk = false;
+			return false;
 		}
-		return isOk;
 	}
 	
 	public String loga(Usuario usuario) {
@@ -74,9 +72,12 @@ public class UsuarioDao {
 	
 
 	private Usuario prepararUsuario(Usuario usuario) {
+		Carteira carteira = new Carteira();
 		try {
 			String hash = TokenGenerator.digester(usuario.getSenha());
 			usuario.setSenha(hash);
+			usuario.setCarteira(carteira);
+			usuario.setEstado(true);
 		} catch (UnsupportedEncodingException | NoSuchAlgorithmException e) {
 			e.printStackTrace();
 		}

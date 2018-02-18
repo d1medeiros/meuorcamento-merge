@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Entity;
@@ -29,7 +28,7 @@ import com.fasterxml.jackson.datatype.jsr310.JSR310Module;
 
 @SuppressWarnings("deprecation")
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class ContasPorUsuarios {
+public class TesteDasRotas {
 
 	private static String primeiraToken;
 	private static int idConta;
@@ -39,6 +38,19 @@ public class ContasPorUsuarios {
 	private static String collect;
 	private static List<Conta> contas;
 	private static int contasSize;
+	private static long contagemMesAtual;
+	
+	
+	private JSONObject jsonConta(String nome, int valor, String data, boolean estado, boolean repetir, String tipo) {
+		JSONObject jsonObject = new JSONObject();
+		jsonObject.putOpt("nome", nome);
+		jsonObject.putOpt("valor", valor);
+		jsonObject.putOpt("dataPagamento", data);
+		jsonObject.putOpt("estado", estado);
+		jsonObject.putOpt("repetir", repetir);
+		jsonObject.putOpt("tipoConta", tipo);
+		return jsonObject;
+	}
 
 	private void imp(String local, Object obj) {
 		System.out.println("dmedeiros :: TESTE : " + local + " : " + obj + "\n");
@@ -105,120 +117,99 @@ public class ContasPorUsuarios {
 
 	@Test
 	public void cGeraConta() {
-		JSONObject jsonObject = new JSONObject();
-		jsonObject.putOpt("nome", "cartao");
-		jsonObject.putOpt("valor", 2110);
-		jsonObject.putOpt("dataPagamento", "2018-02-20");
-		jsonObject.putOpt("estado", false);
-		jsonObject.putOpt("repetir", false);
-		jsonObject.putOpt("tipoConta", "GASTOS");
+		
+		int mesAtual = LocalDate.now().getMonthValue();
+		String mesAtualString = (""+mesAtual).length() == 1 ? "0"+mesAtual : ""+mesAtual;
+		int mesAnterior = LocalDate.now().minusMonths(1).getMonthValue();
+		String mesAnteriorString = (""+mesAnterior).length() == 1 ? "0"+mesAnterior : ""+mesAnterior;
+		int mesDepois = LocalDate.now().plusMonths(1).getMonthValue();
+		String mesDepoisString = (""+mesDepois).length() == 1 ? "0"+mesDepois : ""+mesDepois;
+		
+		contagemMesAtual = 3;
+		
+		JSONObject jsonObject = jsonConta("cartao", 2110, "2018-" + mesAtualString + "-20", false, false, "GASTOS");
 		Client newClient = ClientBuilder.newClient();
 		WebTarget target = newClient.target("http://127.0.0.1:8080");
 		Response response = target.path("/meuorcamento/api/conta/salva").request().header("XTOKEN", primeiraToken).post(Entity.json(jsonObject.toString()));
 		String responseString = response.readEntity(String.class);
-		imp("cGeraConta: ", responseString);
 		response.close();
+
+		jsonObject = jsonConta("academia", 110, "2018-" + mesAtualString + "-22", false, false, "GASTOS");
+		target = newClient.target("http://127.0.0.1:8080");
+		response = target.path("/meuorcamento/api/conta/salva").request().header("XTOKEN", primeiraToken).post(Entity.json(jsonObject.toString()));
+		responseString = response.readEntity(String.class);
+		response.close();
+		
+		jsonObject = jsonConta("telefone", 210, "2018-" + mesAnteriorString + "-22", false, true, "GASTOS");
+		target = newClient.target("http://127.0.0.1:8080");
+		response = target.path("/meuorcamento/api/conta/salva").request().header("XTOKEN", primeiraToken).post(Entity.json(jsonObject.toString()));
+		responseString = response.readEntity(String.class);
+		response.close();
+		
+		jsonObject = jsonConta("internet", 80, "2018-" + mesDepoisString + "-22", false, false, "GASTOS");
+		target = newClient.target("http://127.0.0.1:8080");
+		response = target.path("/meuorcamento/api/conta/salva").request().header("XTOKEN", primeiraToken).post(Entity.json(jsonObject.toString()));
+		responseString = response.readEntity(String.class);
+		response.close();
+		
+		jsonObject = jsonConta("seguro", 480, "2018-" + mesDepoisString + "-22", false, true, "GASTOS");
+		target = newClient.target("http://127.0.0.1:8080");
+		response = target.path("/meuorcamento/api/conta/salva").request().header("XTOKEN", primeiraToken).post(Entity.json(jsonObject.toString()));
+		responseString = response.readEntity(String.class);
+		response.close();
+		
+		
+		imp("cGeraConta: ", responseString);
 		Assert.assertNotNull(responseString);
 	}
 
 	@Test
-	public void dContasAtuais() {
+	public void dContasAtuais() throws JsonParseException, JsonMappingException, IOException {
 
 		Client newClient = ClientBuilder.newClient();
 		WebTarget target = newClient.target("http://127.0.0.1:8080");
 		String response = target.path("/meuorcamento/api/conta/atual").request().header("XTOKEN", primeiraToken).get(String.class);
 		imp("dContasAtuais: ", response);
 		
-		Assert.assertNotNull(response);
+		ObjectMapper objectMapper = new ObjectMapper();
+		objectMapper.registerModule(new JSR310Module());
+		objectMapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd"));
+		List<Conta> contasNova = objectMapper.readValue(response, new TypeReference<List<Conta>>() {});
+		
+		long count = contasNova.stream().filter(c -> c.getDataPagamento().getMonthValue() == LocalDate.now().getMonthValue()).count();
+
+		Assert.assertTrue(contagemMesAtual == count);
 	}
 	
 	@Test
 	public void eRemoveConta() throws JsonParseException, JsonMappingException, IOException {
-		//so tem o 1 ate aqui
 		idConta = 1;
-//		idContaRepetir = (int) new JSONObject(jsonArray.opt(1).toString()).opt("id");
 		
 		Client newClient = ClientBuilder.newClient();
 		WebTarget target = newClient.target("http://127.0.0.1:8080");
 		Response response = target.path("/meuorcamento/api/conta/remove/" + idConta).request().header("XTOKEN", primeiraToken).post(null);
 		String responseString = response.readEntity(String.class);
-		imp("eRemoveConta: ", idConta);
+		imp("eRemoveConta: ", idConta + " - " + responseString);
 		response.close();
 		Assert.assertNull(getNomeById(idConta));
 	}
 	
 	@Test
-	public void fGeraContaRepetir() {
-		int monthValue = LocalDate.now().minusMonths(1).getMonthValue();
-		mesAnterior = monthValue < 10 ? "0" + monthValue : "" + monthValue;
-		JSONObject jsonObject = new JSONObject();
-		jsonObject.putOpt("nome", "seguro");
-		jsonObject.putOpt("valor", 1110);
-		jsonObject.putOpt("dataPagamento", "2018-" + mesAnterior + "-20");
-		jsonObject.putOpt("estado", false);
-		jsonObject.putOpt("repetir", true);
-		jsonObject.putOpt("tipoConta", "GASTOS");
-		Client newClient = ClientBuilder.newClient();
-		WebTarget target = newClient.target("http://127.0.0.1:8080");
-		Response response = target.path("/meuorcamento/api/conta/salva").request().header("XTOKEN", primeiraToken).post(Entity.json(jsonObject.toString()));
-		String responseString = response.readEntity(String.class);
-		imp("fGeraContaRepetir: ", responseString);
-		response.close();
-		Assert.assertNotNull(responseString);
-	}
-
-
-	@Test
-	public void gRemoveAllConta() throws JsonParseException, JsonMappingException, IOException {
-		//	ids 2 ao 13
-		idContaRepetir = 2;
+	public void fRemoveAllConta() throws JsonParseException, JsonMappingException, IOException {
+		//	id de conta repetida
+		idContaRepetir = 3;
 		Client newClient = ClientBuilder.newClient();
 		WebTarget target = newClient.target("http://127.0.0.1:8080");
 		Response response = target.path("/meuorcamento/api/conta/remove/todos/" + idContaRepetir).request().header("XTOKEN", primeiraToken).post(null);
 		String responseString = response.readEntity(String.class);
-		imp("gRemoveAllConta: ", idContaRepetir + " e todas pra frente");
+		imp("fRemoveAllConta: ", idContaRepetir + " e todas pra frente");
 		response.close();
 		Assert.assertNull(getNomeById(idContaRepetir));
 	}
 	
 	@Test
-	public void hGeraContaRepetir() {
-		int monthValue = LocalDate.now().minusMonths(1).getMonthValue();
-		mesAnterior = monthValue < 10 ? "0" + monthValue : "" + monthValue;
-		JSONObject jsonObject = new JSONObject();
-		jsonObject.putOpt("nome", "seguro");
-		jsonObject.putOpt("valor", 1110);
-		jsonObject.putOpt("dataPagamento", "2018-" + mesAnterior + "-20");
-		jsonObject.putOpt("estado", false);
-		jsonObject.putOpt("repetir", true);
-		jsonObject.putOpt("tipoConta", "GASTOS");
-		Client newClient = ClientBuilder.newClient();
-		WebTarget target = newClient.target("http://127.0.0.1:8080");
-		Response response = target.path("/meuorcamento/api/conta/salva").request().header("XTOKEN", primeiraToken).post(Entity.json(jsonObject.toString()));
-		String responseString = response.readEntity(String.class);
-		imp("fGeraContaRepetir: ", responseString);
-		response.close();
-		Assert.assertNotNull(responseString);
-	}
-
-	
-	@Test
-	public void iContasMesAno() {
-		LocalDate now = LocalDate.now();
-		int monthValue = now.getMonthValue();
-		int year = now.getYear();
-		String mesAno = mesAnterior + "-" + year;
-		Client newClient = ClientBuilder.newClient();
-		WebTarget target = newClient.target("http://127.0.0.1:8080");
-		String response = target.path("/meuorcamento/api/conta/mesano/" + mesAno).request().header("XTOKEN", primeiraToken).get(String.class);
-		imp("hContasMesAno: ", response);
-		
-		Assert.assertNotNull(response);
-	}
-
-	@Test
 	public void jAlteraConta() throws JsonParseException, JsonMappingException, IOException {
-		idConta = 14;
+		idConta = 15;
 		Client newClient1 = ClientBuilder.newClient();
 		WebTarget target1 = newClient1.target("http://127.0.0.1:8080");
 		String response1 = target1.path("/meuorcamento/api/conta/" + idConta).request().header("XTOKEN", primeiraToken).get(String.class);
@@ -246,12 +237,11 @@ public class ContasPorUsuarios {
 		imp("jAlteraConta: ", idConta + " - " + nomeAterado + " :: " + nomeNovo + "  " + nomeAterado.equalsIgnoreCase(nomeNovo));
 		Assert.assertTrue(nomeAterado.equalsIgnoreCase(nomeNovo));
 	}
-
-
+	
 	@Test
 	@SuppressWarnings("unchecked")
 	public void kAlteraALLConta() throws JsonParseException, JsonMappingException, IOException {
-//		idConta = 15;
+		idConta = 16;
 		Client newClient1 = ClientBuilder.newClient();
 		WebTarget target1 = newClient1.target("http://127.0.0.1:8080");
 		String response1 = target1.path("/meuorcamento/api/conta/seisMeses").request().header("XTOKEN", primeiraToken).get(String.class);
@@ -271,7 +261,7 @@ public class ContasPorUsuarios {
 		Conta conta = contas.stream()
 				 			.filter(c -> Optional.of(c).isPresent())
 				 			.filter(c -> c.getNome().equalsIgnoreCase("seguro"))
-				 			.filter(c -> c.getId() == 15)
+				 			.filter(c -> c.getId() == idConta)
 				 			.map(c -> changeNome(nomeAterado, c))
 							.collect(Collectors.toList()).get(0);
 		
@@ -311,5 +301,6 @@ public class ContasPorUsuarios {
 			Assert.assertTrue(size == contasSize);
 
 	}
+
 
 }

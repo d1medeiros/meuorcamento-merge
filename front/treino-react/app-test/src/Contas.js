@@ -3,10 +3,7 @@ import {Link} from 'react-router';
 import FaPlus from 'react-icons/lib/fa/plus';
 import TRContas from './componentes/TRContas';
 import Verificar from './util/Verificar';
-
-// import Popup from './componentes/Popup';
 import PubSub from 'pubsub-js';
-import $ from 'jquery';
 
 class Contas extends Component{
 
@@ -82,7 +79,7 @@ class Contas extends Component{
             console.log(topico);
             var conta = obj.conta;
             var tipo = obj.tipo;
-            console.log(conta + ' - ' + tipo);
+            console.log(conta, tipo);
             
             if(tipo === 'GASTOS'){
                 this.removerGastos(conta, false);
@@ -237,18 +234,21 @@ class Contas extends Component{
         }
         
         console.log("Removendo " + param);
-        $.ajax({
-            type:'post',
-            url:'http://localhost:8080/meuorcamento/api/conta/remove/' + param,
-            contentType:'application/json',
-            dataType:'json',
-            success: function(res){
-                PubSub.publish('atualiza.gastos', conta.id);
-            },
-            error: function(res, req){
-                console.log(res.status)
-            }           
-          });
+
+        const url = 'http://localhost:8080/meuorcamento/api/conta/remove/' + param;
+        const req = {
+            method: 'POST',
+            headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
+        }
+
+        fetch(url, req)
+            .then(res => {
+                    PubSub.publish('atualiza.gastos', conta.id);
+            }).catch(error => {
+                this.setState({
+                    msg: error.message
+                });
+            });
     }
 
     removerGanho(conta, pTodos){
@@ -261,18 +261,22 @@ class Contas extends Component{
         }
         
         console.log("Removendo " + param);
-        $.ajax({
-            type:'post',
-            url:'http://localhost:8080/meuorcamento/api/conta/remove/' + param,
-            contentType:'application/json',
-            dataType:'json',
-            success: function(res){
-                PubSub.publish('atualiza.ganho', conta.id);
-            },
-            error: function(res, req){
-                console.log(res.status)
-            }           
-          });
+
+        const url = 'http://localhost:8080/meuorcamento/api/conta/remove/' + param;
+        const req = {
+            method: 'POST',
+            headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
+        }
+
+        fetch(url, req)
+            .then(res => {
+                    PubSub.publish('atualiza.ganho', conta.id);
+            }).catch(error => {
+                this.setState({
+                    msg: error.message
+                });
+            });
+
     }
 
 

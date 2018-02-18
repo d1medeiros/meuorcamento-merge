@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import $ from 'jquery';
 
 export default class FormContas extends Component{
 
@@ -37,15 +36,25 @@ export default class FormContas extends Component{
         console.log(this.props);
         if(this.props.acao){
 
-            $.ajax({
-                url:"http://localhost:8080/meuorcamento/api/conta/" + this.props.acao,
-                dataType: 'json',
-                success:function(resp){    
-                    
+            const url = "http://localhost:8080/meuorcamento/api/conta/" + this.props.acao;
+            const req = {
+                method: 'GET',
+                headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
+            }
+            fetch(url, req)
+                .then(res => {
+                    if(res.ok){
+                        return  res.json();
+                    }else{
+                        throw new Error('não foi possível fazer o login');
+                    }
+                }).then(resp => {
                     this.setState(this.sucessoAjax(resp));
-                    
-                }.bind(this)
-            });
+                }).catch(error => {
+                    this.setState({
+                        msg: error.message
+                    });
+                });
         }
     }   
 
@@ -57,17 +66,14 @@ export default class FormContas extends Component{
         }else{
             a = 'salva';
         }
-        const tUrl = 'http://localhost:8080/meuorcamento/api/conta/' + a;
         
         console.log(this.props.acao);
-        console.log(tUrl);
 
-        $.ajax({
-            type:'post',
-            url: tUrl,
-            contentType:'application/json',
-            dataType:'json',
-            data: JSON.stringify({
+        const url = 'http://localhost:8080/meuorcamento/api/conta/' + a;
+        const req = {
+            method: 'POST',
+            headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') }),
+            body: JSON.stringify({
                 id: this.props.acao,
                 nome: this.state.nome,
                 valor: this.state.valor,
@@ -75,21 +81,25 @@ export default class FormContas extends Component{
                 estado: this.state.estado,
                 repetir: this.state.repetir,
                 tipoConta: this.state.tipoConta
-            }),
-            success: function(){
+            })
+        }
+
+        fetch(url, req)
+            .then(res => {
                 var acaoAltera = this.state.formAcao;
                 this.setState({nome:'', valor:0, dataPagamento:'', estado: false, repetir: false, tipoConta: '', alterarTodos: false});
                 if(acaoAltera === 'altera'){
                     this.props.rota.push('/contas')         
                 }
-                console.log(this.state)
-            }.bind(this),
-            error: function(res, req){
-                console.log(res.status)
-            }
-            
+                console.log(res)
+                
+            }).then(jsonStringToken => {
+               
+            }).catch(error => {
+                this.setState({
+                    msg: error.message
+                });
         });
-        
     }
     
     salvaAlteracao(nomeInput,event){

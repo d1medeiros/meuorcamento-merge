@@ -1,16 +1,16 @@
 package org.meuorcamento.model;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -23,13 +23,16 @@ public class Usuario {
 	@GeneratedValue(strategy=GenerationType.IDENTITY, generator="EMP_SEQ")
 	private long id;
 	private String nome;
-	private String login;
-	private String senha;
 	private boolean estado;
 	private LocalDate ultimoAcesso;
-	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	private List<Conta> contas = new ArrayList<>();
+	private String senha;
+	@Column(unique=true)
+	private String login;
+    @OneToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
+    @JoinColumn(unique=true)
+	private Carteira carteira;
 	
+    
 	
 	public long getId() {
 		return id;
@@ -43,11 +46,23 @@ public class Usuario {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	public String getLogin() {
+		return login;
+	}
+	public void setLogin(String login) {
+		this.login = login;
+	}
 	public String getSenha() {
 		return senha;
 	}
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	public Carteira getCarteira() {
+		return carteira;
+	}
+	public void setCarteira(Carteira carteira) {
+		this.carteira = carteira;
 	}
 	public boolean isEstado() {
 		return estado;
@@ -61,21 +76,46 @@ public class Usuario {
 	public void setUltimoAcesso(LocalDate ultimoAcesso) {
 		this.ultimoAcesso = ultimoAcesso;
 	}
-	public String getLogin() {
-		return login;
-	}
-	public void setLogin(String login) {
-		this.login = login;
-	}
-	public List<Conta> getContas() {
-		return contas;
-	}
-	public void setContas(List<Conta> contas) {
-		this.contas = contas;
-	}
 	
 	@Override
 	public String toString() {
-		return String.format("ID: %d - Nome: %s ", this.id, this.nome);
+		// TODO Auto-generated method stub
+		return String.format("ID: %d Nome: %s", this.id, this.nome);
 	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + (int) (id ^ (id >>> 32));
+		result = prime * result + ((login == null) ? 0 : login.hashCode());
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Usuario other = (Usuario) obj;
+		if (id != other.id)
+			return false;
+		if (login == null) {
+			if (other.login != null)
+				return false;
+		} else if (!login.equals(other.login))
+			return false;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
+		return true;
+	}
+	
+	
+
 }
