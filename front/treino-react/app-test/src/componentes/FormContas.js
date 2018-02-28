@@ -36,7 +36,7 @@ export default class FormContas extends Component{
         console.log(this.props);
         if(this.props.acao){
 
-            const url = "http://localhost:8080/meuorcamento/api/conta/" + this.props.acao;
+            const url = "http://meuorcamentoec2.com:8080/meuorcamento/api/conta/" + this.props.acao;
             const req = {
                 method: 'GET',
                 headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
@@ -69,7 +69,7 @@ export default class FormContas extends Component{
         
         console.log(this.props.acao);
 
-        const url = 'http://localhost:8080/meuorcamento/api/conta/' + a;
+        const url = 'http://meuorcamentoec2.com:8080/meuorcamento/api/conta/' + a;
         const req = {
             method: 'POST',
             headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') }),

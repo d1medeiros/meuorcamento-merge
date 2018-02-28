@@ -18,7 +18,7 @@ export default class Login extends Component {
         console.log('envia', this.state);
         event.preventDefault();
 
-        const url = 'http://localhost:8080/meuorcamento/api/usuario/login';
+        const url = 'http://meuorcamentoec2.com:8080/meuorcamento/api/usuario/login';
         const req = {
             method: 'PUT',
             body: JSON.stringify({ login: this.login.value, senha: this.senha.value }),
