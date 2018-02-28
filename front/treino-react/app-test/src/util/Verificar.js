@@ -4,7 +4,7 @@ import { Component } from 'react';
 export default class Verificar extends Component {
 
     verifica(){
-        const url = `http://localhost:8080/meuorcamento/api/usuario/verificar?XTOKEN=${localStorage.getItem('auth-token')}`;
+        const url = `http://meuorcamentoec2.com:8080/meuorcamento/api/usuario/verificar?XTOKEN=${localStorage.getItem('auth-token')}`;
 
         fetch(url)
             .then(res => {

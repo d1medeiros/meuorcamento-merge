@@ -31,7 +31,7 @@ class Contas extends Component{
 
         new Verificar().verifica();
 
-        const url = 'http://localhost:8080/meuorcamento/api/conta/atual';
+        const url = 'http://meuorcamentoec2.com:8080/meuorcamento/api/conta/atual';
         const req = {
             method: 'GET',
             headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
@@ -159,7 +159,7 @@ class Contas extends Component{
         if(isOk){
             var paramDate = mes + '-' + ano
            
-            const url = "http://localhost:8080/meuorcamento/api/conta/mesano/" + paramDate;
+            const url = "http://meuorcamentoec2.com:8080/meuorcamento/api/conta/mesano/" + paramDate;
             const req = {
                 method: 'GET',
                 headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
@@ -202,7 +202,7 @@ class Contas extends Component{
             console.log("next mes - ano " + mes + ' - ' + ano);
             if(isOk){
                 var paramDate = mes + '-' + ano
-                const url = "http://localhost:8080/meuorcamento/api/conta/mesano/" + paramDate;
+                const url = "http://meuorcamentoec2.com:8080/meuorcamento/api/conta/mesano/" + paramDate;
                 const req = {
                     method: 'GET',
                     headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
@@ -235,7 +235,7 @@ class Contas extends Component{
         
         console.log("Removendo " + param);
 
-        const url = 'http://localhost:8080/meuorcamento/api/conta/remove/' + param;
+        const url = 'http://meuorcamentoec2.com:8080/meuorcamento/api/conta/remove/' + param;
         const req = {
             method: 'POST',
             headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
@@ -262,7 +262,7 @@ class Contas extends Component{
         
         console.log("Removendo " + param);
 
-        const url = 'http://localhost:8080/meuorcamento/api/conta/remove/' + param;
+        const url = 'http://meuorcamentoec2.com:8080/meuorcamento/api/conta/remove/' + param;
         const req = {
             method: 'POST',
             headers: new Headers({ 'Content-type' : 'application/json', 'XTOKEN' : localStorage.getItem('auth-token') })
